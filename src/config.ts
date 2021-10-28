@@ -1,6 +1,6 @@
 export default class BotConfiguration {
   private static readonly DISCORD_TOKEN_KEY = 'DISCORD_TOKEN'
-  discordToken: String
+  discordToken: string
 
   private constructor () {
     this.discordToken = ''

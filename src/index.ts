@@ -5,7 +5,7 @@ function main (): void {
   const config = BotConfiguration.fromEnv()
   const bot = new Bot(config)
 
-  // bot.start?
+  bot.start()
 }
 
 main()
