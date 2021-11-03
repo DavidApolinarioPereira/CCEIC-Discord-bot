@@ -16,6 +16,7 @@ export default class Bot {
     this.client.on('ready', this.readyHandler.bind(this))
     this.client.on('interactionCreate', this.interactionCreateHandler.bind(this))
 
+
     this.config = config
   }
 
