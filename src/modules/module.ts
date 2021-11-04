@@ -1,3 +1,6 @@
+import YAML from 'yaml'
+import fs from 'fs'
+
 export class Module {
   constructor (
     public readonly name: string,
@@ -11,9 +14,8 @@ export class Module {
      * @param path file path
      */
   static fromFile (path: string): Module {
-    // TODO
-    // or public ctor from random object
-    return {} as Module
+    const file = fs.readFileSync(path, 'utf8')
+    return YAML.parse(file) as Module
   }
 
   getScoreForRightAnswer (): number {
