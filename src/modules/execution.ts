@@ -315,7 +315,7 @@ export class ModuleExecutionEnd extends ModuleExecution {
   public advance (actionId: string): ModuleExecution {
     switch (actionId) {
       case EndAction.RestartEvaluation:
-        return new ModuleExecutionEvaluation(this.module)
+        return new ModuleExecutionEvaluationPre(this.module)
       case EndAction.RestartModule:
         return new ModuleExecutionStart(this.module)
       default:

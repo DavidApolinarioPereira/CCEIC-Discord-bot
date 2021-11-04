@@ -10,9 +10,9 @@ export class Module {
   ) { }
 
   /**
-     * Load module from a file
-     * @param path file path
-     */
+   * Load module from a file
+   * @param path file path
+   */
   static fromFile (path: string): Module {
     const file = fs.readFileSync(path, 'utf8')
     return YAML.parse(file) as Module

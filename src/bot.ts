@@ -1,6 +1,9 @@
-import Discord from 'discord.js'
+import Discord, { MessageActionRow } from 'discord.js'
+import { addAbortSignal } from 'stream'
 import BotConfiguration from './config'
 import { ModuleExecution, ModuleRegistry } from './modules'
+import { ModuleExecutionEnd, ModuleExecutionError, ModuleExecutionEvaluation, ModuleExecutionEvaluationPre, ModuleExecutionFormative, ModuleExecutionFormativeFeedback, ModuleExecutionStart } from './modules/execution'
+import { ExecutionVisitor } from './modules/executionvisitor'
 
 export default class Bot {
   private readonly client: Discord.Client
@@ -30,19 +33,90 @@ export default class Bot {
       case 'APPLICATION_COMMAND':
         break
       case 'MESSAGE_COMPONENT':
-        // TODO
-        // let execution = ModuleExecution.deserialize(...)
         if (interaction.isButton()) {
-          // execution = execution.consumestuffthings(...)
-          // const serialized = execution.serialize()
-
-          // post buttons with right id (`${serialized}-${idx}`)
+          this.handleButtonInteraction(interaction as Discord.ButtonInteraction)
         }
         break
     }
   }
 
+  handleButtonInteraction(interaction: Discord.ButtonInteraction): void {
+    let [state, actionId] = this.parseButtonId(interaction.customId)
+    state = state.advance(actionId)
+
+    const renderer = new ModuleExecutionRenderer(this, interaction)
+    state.accept(renderer)
+  }
+
+  private parseButtonId(customId: string): [ModuleExecution, string] {
+    const [actionId, serializedState] = customId.split('-', 2)
+    return [ModuleExecution.deserialize(serializedState, this.modules), actionId]
+  }
+
+  createButtonId(state: ModuleExecution, actionId: string): string {
+    const serializedState = state.serialize()
+    return `${actionId}-${serializedState}`
+  }
+
   async start (): Promise<void> {
     await this.client.login(this.config.discordToken)
+  }
+}
+
+class ModuleExecutionRenderer extends ExecutionVisitor<Promise<void>> {
+  constructor(
+    private readonly bot: Bot,
+    private readonly interaction: Discord.ButtonInteraction
+  ) {
+    super()
+  }
+
+
+  public async visitStart (e: ModuleExecutionStart): Promise<void> {
+    const row = new MessageActionRow()
+      .addComponents(
+        this.button(e, '_')
+          .setLabel('Next')
+      )
+
+    await this.interaction.update({
+      content: [
+        "stuff"
+      ].join('\n'),
+      components: [row],
+    })
+  }
+
+  public async visitFormative (e: ModuleExecutionFormative): Promise<void> {
+
+  }
+
+  public async visitFormativeFeedback (e: ModuleExecutionFormativeFeedback): Promise<void> {
+
+  }
+
+  public async visitEvaluationPre (e: ModuleExecutionEvaluationPre): Promise<void> {
+
+  }
+
+  public async visitEvaluation (e: ModuleExecutionEvaluation): Promise<void> {
+
+  }
+
+  public async visitEnd (e: ModuleExecutionEnd): Promise<void> {
+
+  }
+
+  public async visitError (e: ModuleExecutionError): Promise<void> {
+    await this.interaction.reply([
+      `Error: ${e.message}`,
+      'Manually restart module.',
+      'If your name is Sofia, Afonso or Roman please ignore :)'
+    ].join('\n'))
+  }
+
+  private button(ex: ModuleExecution, actionId: string): Discord.MessageButton {
+    return new Discord.MessageButton()
+      .setCustomId(this.bot.createButtonId(ex, actionId))
   }
 }
