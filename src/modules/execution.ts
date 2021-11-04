@@ -85,12 +85,12 @@ export abstract class ModuleExecution {
 
 enum ModuleExecutionType {
   Start = 0,
-  Formative = 1,
-  FormativeFeedback = 2,
-  EvaluationPre = 2,
-  Evaluation = 3,
-  End = 5,
-  Error = 6,
+  Formative,
+  FormativeFeedback,
+  EvaluationPre,
+  Evaluation,
+  End,
+  Error,
 }
 
 export class ModuleExecutionStart extends ModuleExecution {
@@ -345,7 +345,7 @@ export class ModuleExecutionError extends ModuleExecution {
     return ModuleExecutionType.Error
   }
 
-  protected serializeInner (writer: CdrWriter): void {
+  protected serializeInner (writer: CdrWriter) {
     writer.string(this.message)
   }
 
