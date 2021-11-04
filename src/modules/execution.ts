@@ -112,7 +112,7 @@ export class ModuleExecutionStart extends ModuleExecution {
 export class ModuleExecutionFormative extends ModuleExecution {
   public readonly questionNumber: number
 
-  constructor (module: Module, rngSeed: number | null = null, qn: number = 0): void {
+  constructor (module: Module, rngSeed: number | null = null, qn: number = 0) {
     super(module, rngSeed)
     this.questionNumber = qn
   }
