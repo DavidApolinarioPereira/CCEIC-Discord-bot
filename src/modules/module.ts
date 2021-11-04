@@ -15,6 +15,14 @@ export class Module {
     // or public ctor from random object
     return {} as Module
   }
+
+  getScoreForRightAnswer (): number {
+    return 1
+  }
+
+  getScoreForWrongAnswer (): number {
+    return 0
+  }
 }
 
 export class Question {
