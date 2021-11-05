@@ -1,0 +1,36 @@
+{
+    "name": "m1",
+    "videoUri": "https://tinyurl.com/pqqux9a",
+    "formativeQuestions": [
+        {
+            "question": "dummy formative question 1",
+            "correctAnswers": ["dummy answer 1", "dummy answer 2"],
+            "wrongAnswers": ["dummy answer 3", "dummy answer 4", "dummy answer 5"],
+            "feedbackForCorrect": "dummy feedback for correct",
+            "feedbackForWrong": "dummy feedback for wrong"
+        },
+        {
+            "question": "dummy formative question 2",
+            "correctAnswers": ["dummy answer 1", "dummy answer 2"],
+            "wrongAnswers": ["dummy answer 2", "dummy answer 3", "dummy answer 4"],
+            "feedbackForCorrect": "dummy feedback for correct",
+            "feedbackForWrong": "dummy feedback for wrong"
+        }
+    ],
+    "evaluationQuestions": [
+        {
+            "question": "dummy evaluation question 1",
+            "correctAnswers": ["dummy answer 1", "dummy answer 2"],
+            "wrongAnswers": ["dummy answer 3", "dummy3", "dumm4 answer 4"],
+            "feedbackForCorrec5": "dummy feedback for correct",
+            "feedbackForWrong": "dummy feedback for wrong"
+        },
+        {
+            "question": "dummy evaluation question 2",
+            "correctAnswers": ["dummy answer 1", "dummy answer 2"],
+            "wrongAnswers": ["dummy answer 3", "dummy answer 4", "dummy answer 5"],
+            "feedbackForCorrect": "dummy feedback for correct",
+            "feedbackForWrong": "dummy feedback for wrong"
+        }
+    ]
+}
