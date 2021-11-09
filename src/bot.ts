@@ -20,6 +20,25 @@ export default class Bot {
     this.client.on('ready', this.readyHandler.bind(this))
     this.client.on('interactionCreate', this.interactionCreateHandler.bind(this))
 
+    this.client.on('message', (message: any) => {
+      if (!message.content.startsWith(config.prefix) || message.author.bot) return;
+
+      // split is wrong
+      const args = message.content.slice(config.prefix.length).trim().split(/ +/);
+      const commandName = args.shift().toLowerCase();
+
+      if (!this.client.commands.has(commandName)) return;
+
+      const command = this.client.commands.get(commandName);
+
+      try {
+        command.execute(message, args);
+      } catch (error) {
+        console.error(error);
+        message.reply("There was an error trying to execute that command!");
+      }
+    })
+
 
     this.config = config
     this.modules = ModuleRegistry.fromDirectory(config.modulesPath)

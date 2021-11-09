@@ -12,6 +12,7 @@
 		"@discordjs/rest": "^0.1.0-canary.0",
 		"@foxglove/cdr": "^1.2.0",
 		"discord.js": "^13.0.1",
+		"dotenv": "^10.0.0",
 		"random-seedable": "^1.0.8",
 		"yaml": "2.0.0-8"
 	},
