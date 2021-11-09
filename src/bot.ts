@@ -1,5 +1,4 @@
 import Discord, { MessageActionRow } from 'discord.js'
-import { addAbortSignal } from 'stream'
 import BotConfiguration from './config'
 import { ModuleExecution, ModuleRegistry } from './modules'
 import { ModuleExecutionEnd, ModuleExecutionError, ModuleExecutionEvaluation, ModuleExecutionEvaluationPre, ModuleExecutionFormative, ModuleExecutionFormativeFeedback, ModuleExecutionStart } from './modules/execution'
@@ -18,25 +17,29 @@ export default class Bot {
     })
 
     this.client.on('ready', this.readyHandler.bind(this))
-    this.client.on('interactionCreate', this.interactionCreateHandler.bind(this))
+    this.client.on('interactionCreate', interaction => {
+      console.log(interaction)
+      this.interactionCreateHandler.bind(this)
+    })
 
     this.client.on('message', (message: any) => {
-      if (!message.content.startsWith(config.prefix) || message.author.bot) return;
+      console.log(message)
+      // if (!message.content.startsWith(config.prefix) || message.author.bot) return;
 
-      // split is wrong
-      const args = message.content.slice(config.prefix.length).trim().split(/ +/);
-      const commandName = args.shift().toLowerCase();
+      // // split is wrong
+      // const args = message.content.slice(config.prefix.length).trim().split(/ +/);
+      // const commandName = args.shift().toLowerCase();
 
-      if (!this.client.commands.has(commandName)) return;
+      // if (!this.client.commands.has(commandName)) return;
 
-      const command = this.client.commands.get(commandName);
+      // const command = this.client.commands.get(commandName);
 
-      try {
-        command.execute(message, args);
-      } catch (error) {
-        console.error(error);
-        message.reply("There was an error trying to execute that command!");
-      }
+      // try {
+      //   command.execute(message, args);
+      // } catch (error) {
+      //   console.error(error);
+      //   message.reply("There was an error trying to execute that command!");
+      // }
     })
 
 
@@ -49,6 +52,7 @@ export default class Bot {
   }
 
   interactionCreateHandler (interaction: Discord.Interaction): void {
+    console.log(interaction.type)
     switch (interaction.type) {
       case 'APPLICATION_COMMAND':
         break

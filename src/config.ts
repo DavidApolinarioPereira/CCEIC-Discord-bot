@@ -26,12 +26,6 @@ export default class BotConfiguration {
     }
     config.discordToken = token
 
-    const prefix = process.env[this.PREFIX_KEY]
-    if (prefix === undefined) {
-      throw new Error(`Missing Prefix, please set the ${this.PREFIX_KEY} environment variable`)
-    }
-    config.prefix = prefix
-
     const modulesPath = process.env[this.MODULES_PATH_KEY]
     if (modulesPath === undefined) {
       config.modulesPath = '.'
