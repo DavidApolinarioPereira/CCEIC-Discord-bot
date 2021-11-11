@@ -1,7 +1,7 @@
 name: "[LG 8] Relating the Funnel Technique to requirements gathering"
 videoUri: https://youtu.be/ImfU12epYcI?t=117
 description: >
-  Requirements Gathering refers to the process of defining software requirements and goals[1]. It is commonly divided into three main steps[2]:
+  Requirements Gathering refers to the process of defining software requirements and goals (Boogaard, 2021). It is commonly divided into three main steps (Hirsch, 2017):
     - Requirements elicitation - Gathering the important requirements from stakeholders, through interviews and meetings.
     - Requirements documentation - Documentation of the first step, by creating several documents that contain the important information, made available to the development team.
     - Requirements understanding - After having the needed documentation, meetings are needed, to ensure that everyone understands what is needed, and what will be the best approaches to the problems at hand.
@@ -34,12 +34,12 @@ evaluationQuestions:
       feedbackForWrong: Starting with this question is probably not the best course of action. The interviewee may still not be comfortable, and the value that we can get from their answer will probably be low.
     - question: After asking some initial questions, how would you follow it up?
       correctAnswers:
-        - Pick out some yes/no answers, and ask the stakeholder to elaborate, e.g. "Do you want IOS support?".
+        - Pick out some yes/no answers and ask the stakeholder to elaborate, e.g. "Do you want IOS support?".
       wrongAnswers:
-        - Continue to ask closed questions, e.g. 'Which color palette were you think of?'.
+        - Continue to ask closed questions, e.g. 'Which color palette were you thinking of?'.
       feedbackForCorrect: This is a great course of action. After understanding the general requirements trying to get more specific information from the stakeholders.
       feedbackForWrong: Doing this, while useful at times, will limit the information one can gather from the stakeholder.
 references:
-    What You Need To Know About Requirements Gathering: https://www.wrike.com/blog/requirements-gathering-guide/#What-is-the-requirements-gathering-process
-    10 Steps To Successful Requirements Gathering: https://www.phase2technology.com/blog/successful-requirements-gathering
+    "Boogaard, K. (2021, January 27). A Guide to Requirements Gathering | Wrike. Www.wrike.com. Retrieved November 4th, 2021 from: https://www.wrike.com/blog/requirements-gathering-guide/#What-is-the-requirements-gathering-process"
+    "Hirsch, J. (2017, April 11). 10 Steps To Successful Requirements Gathering. Phase2. Retrieved November 4th, 2021 from: https://www.phase2technology.com/blog/successful-requirements-gathering"
 funFacts: []
