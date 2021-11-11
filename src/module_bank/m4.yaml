@@ -1,0 +1,36 @@
+name: "[LG 4] Define, identify and use open questions"
+videoUri: "TODO"
+description: >
+    “An open ended question is designed to encourage a full, meaningful, and deliberate answer using the subject's own knowledge and/or feelings.”  [1]
+    Use cases
+    - Asking details;
+    - Assessing deep knowledge of a subject;
+    - Assess communication skills;
+    - See how the respondent thinks (“open ended questions (...) encourages creative answers and self expression” - link to text);
+    - Help build rapport;
+    - Help uncover previously unspoken needs - respondents are encouraged to provide more information than what was asked
+    - Appropriate for giving qualitative information (“more useful, contextual feedback” - [1])
+formativeQuestions:
+    - question: "Identify the Open questions:"
+      correctAnswers:
+        - What is the most important feature of this product for you?
+        - How would you describe your experience in this company?
+      wrongAnswers:
+        - Did you like our product?
+        - Are you happy with your experience in this company?
+      feedbackForCorrect: Open questions allow us to develop a better understanding of your customers and their needs, as demonstrated here.
+      feedbackForWrong: You might be confusing closed questions with open questions. Open-ended question when you want to develop a better understanding of your customers and their needs [2].
+evaluationQuestions:
+    - question: Now lets try it again! Identify the Open questions!
+      correctAnswers:
+        - How do you feel about our customer service
+        - What were the main reasons you chose our product?
+      wrongAnswers:
+        - Did you experience good customer service
+        - Would you recomend our product?
+      feedbackForCorrect: "Open questions allow us to develop a better understanding of your customers and their needs, as demonstrated here."
+      feedbackForWrong: "Open-ended question when you want to develop a better understanding of your customers and their needs [2]. Check if you are confusing Open questions with closed questions."
+references:
+    Open Ended Questions - Definition + [30 Questionnaire Examples] [1]: https://www.formpl.us/blog/open-ended-questions#:~:text=An%20open%20ended%20question%20is%20designed%20to%20encourage%20a%20full%2C%20meaningful%20and%20deliberate%20answer%20using%20the%20subject%27s%20own%20knowledge%20and/or%20feelings
+    Open Ended Questions [2]: https://www.hotjar.com/blog/open-ended-questions/
+funFacts: []

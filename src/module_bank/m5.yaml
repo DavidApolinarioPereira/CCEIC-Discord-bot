@@ -1,0 +1,43 @@
+name: "[LG 5] Defining and identifying Closed Questions"
+videoUri: "TODO"
+description: > 
+    “Close-ended questions are question formats that provoke a simple response from a respondent. They are designed such there (sic) isn’t much thought into the single word answer”.[1]
+    “Individuals generally enjoy talking about themselves. If you give then an opportunity, you'll be surprised how much information they'll disclose to you. However, close-ended questions seek the exact opposite. Rather than seek to hear all they have to say, these questions target specifics.”[2]
+    
+    When to use closed questions[3]:
+    - To obtain specific insight. Contrary to Open Ended Questions, Closed questions make it easier to compare responses.
+    - To restrict the response and reduce uncertainty.
+    
+formativeQuestions:
+    - question: "Identify the Open questions:"
+      correctAnswers:
+        - What is the most important feature of this product for you?
+        - How would you describe your experience in this company?
+      wrongAnswers:
+        - Did you like our product?
+        - Are you happy with your experience in this company?
+      feedbackForCorrect: "Open questions allow us to develop a better understanding of your customers and their needs, as demonstrated here"
+      feedbackForWrong: "You might be confusing closed questions with open questions. Open-ended question when you want to develop a better understanding of your customers and their needs [2]"
+evaluationQuestions:
+    - question: Please identify the type of this question - "What would need to change in order for you to accomplish this?".
+      correctAnswers:
+        - Probing Question
+      wrongAnswers:
+        - Open Question
+        - Closed Question
+        - Leading Question
+      feedbackForCorrect: Well done! This particular question is a probing question. The person asking the question wants to learn about a specific topic, by asking an open-type question, that is directed at a specific topic.
+      feedbackForWrong: This particular question is a probing question. The person asking the question wants to learn about a specific topic, by asking an open-type question, that is directed at a specific topic.
+    - question: Please identify the type of this question - (A policeman that has just witnessed a driver cut a STOP sign) "You didn’t see the stop sign, did you?"
+      correctAnswers:
+        - Coercive Leading Question
+      wrongAnswers:
+        - Assumption Based Leading Question
+        - Direct Implication Leading Question
+      feedbackForCorrect: Well done! This particular question is created in such a way, that the responder is forced to say no.
+      feedbackForWrong: The correct answer is Coercive Leading Question. This particular question is created in such a way, that the responder is forced to say no.
+references:
+    Close Ended Questions [1]: https://www.formpl.us/blog/close-ended-questions#:~:text=Close-ended%20questions%20are%20question%20formats%20that%20provoke%20a%20simple%20response%20from%20a%20respondent.%20They%20are%20designed%20such%20there%20isn%E2%80%99t%20much%20thought%20into%20the%20single%20word%20answer.
+    Close Ended Questions - Definition [2]: https://www.formpl.us/blog/close-ended-questions#:~:text=Individuals%20generally%20enjoy%20talking%20about%20themselves.%20If%20you%20give%20then%20an%20opportunity%2C%20you%27ll%20be%20surprised%20how%20much%20information%20they%27ll%20disclose%20to%20you.%20However%2C%20close-ended%20questions%20seek%20the%20exact%20opposite.%20Rather%20than%20seek%20to%20hear%20all%20they%20have%20to%20say%2C%20these%20questions%C2%A0target%20specifics.
+    When to user Close Ended Questions [3]: https://www.questionpro.com/close-ended-questions.html
+funFacts: []

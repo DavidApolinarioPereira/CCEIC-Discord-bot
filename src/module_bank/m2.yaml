@@ -1,36 +1,34 @@
-{
-    "name": "m1",
-    "videoUri": "https://tinyurl.com/pqqux9a",
-    "formativeQuestions": [
-        {
-            "question": "dummy formative question 1",
-            "correctAnswers": ["dummy answer 1", "dummy answer 2"],
-            "wrongAnswers": ["dummy answer 3", "dummy answer 4", "dummy answer 5"],
-            "feedbackForCorrect": "dummy feedback for correct",
-            "feedbackForWrong": "dummy feedback for wrong"
-        },
-        {
-            "question": "dummy formative question 2",
-            "correctAnswers": ["dummy answer 1", "dummy answer 2"],
-            "wrongAnswers": ["dummy answer 2", "dummy answer 3", "dummy answer 4"],
-            "feedbackForCorrect": "dummy feedback for correct",
-            "feedbackForWrong": "dummy feedback for wrong"
-        }
-    ],
-    "evaluationQuestions": [
-        {
-            "question": "dummy evaluation question 1",
-            "correctAnswers": ["dummy answer 1", "dummy answer 2"],
-            "wrongAnswers": ["dummy answer 3", "dummy3", "dumm4 answer 4"],
-            "feedbackForCorrec5": "dummy feedback for correct",
-            "feedbackForWrong": "dummy feedback for wrong"
-        },
-        {
-            "question": "dummy evaluation question 2",
-            "correctAnswers": ["dummy answer 1", "dummy answer 2"],
-            "wrongAnswers": ["dummy answer 3", "dummy answer 4", "dummy answer 5"],
-            "feedbackForCorrect": "dummy feedback for correct",
-            "feedbackForWrong": "dummy feedback for wrong"
-        }
-    ]
-}
+name: "[LG 2] Role of asking questions in a professional context"
+videoUri: https://youtu.be/ImfU12epYcI?t=95
+description: >
+    In the professional context, the ability to ask questions increases our management abilities. Some of these abilities include: 
+    - Being eager to learn and accepting new ideas and points of view and not letting hierarchy interfere with learning.
+    - Eager to engage and pay attention to the response given by our colleagues.
+    - Being curious and trying to understand how others see the same situations.
+    When your questions are met with good answers, it adds dimensions to your thought process, allowing you to come up with innovative pivoting plans during a crisis, portray authenticity, or determine ways to support your team during trying times.
+    Asking questions will also improve group moral in a work envirnoment and helps teams find betters solutions together. People that ask questions are better at building relationships which is key in a work envirnoment.
+    During this process we also learn more about our colleagues at work and how to deal with them in the future, also contributing to a productive environment.
+formativeQuestions:
+    - question: "When presented with the chance of asking questions in a work environment one should (Choose the ones that are more correct):"
+      correctAnswers:
+        - Thouroughly plan the questions
+        - Have an open Conversation
+      wrongAnswers:
+        - Ask questions without worrying about transitioning between them
+        - Ask questions, even if they don't necessarily give you the most relevant information.
+      feedbackForCorrect: "Always plan your questions and try to have an open conversation, inviting the respondant to talk."
+      feedbackForWrong: "Always try to frame the next question even if this takes you off the planned path. All the questions you ask should bring something relevant to you."
+evaluationQuestions:
+    - question: "In a work environment, a colleague should:" 
+      correctAnswers:
+        - Speak the listener’s language
+        - Use neutral wording
+      wrongAnswers:
+        - Interrupt when there is the need for it
+        - Ask more generalised questions without any specific focus on any topic
+      feedbackForCorrect: "One should always strive to use neutral questions that represent accurate information"
+      feedbackForWrong: "Avoid interrupting the speaker. Always let the speaker finish before starting to talk. Try to focus on a specific topic instead of just asking generic questions. This will improve your questioning techniques!"
+references:
+    The Importance of Asking Questions as a Professional [1]: https://www.vision-advertising.com/2020/07/03/the-importance-of-asking-questions-as-a-professional/
+    Ten Tips for Asking Good Questions [2]: https://www.dummies.com/careers/find-a-job/interviews/ten-tips-for-asking-good-questions/
+funFacts: []

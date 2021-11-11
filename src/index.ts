@@ -1,5 +1,5 @@
-import Bot from './bot'
-import BotConfiguration from './config'
+import Bot from './bot.js'
+import BotConfiguration from './config.js'
 
 function main (): void {
   const config = BotConfiguration.fromEnv()

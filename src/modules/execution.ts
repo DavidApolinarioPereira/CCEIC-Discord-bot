@@ -1,7 +1,8 @@
-import { Module, ModuleRegistry, Question } from '.'
+import { Module, ModuleRegistry, Question } from './index.js'
 import { XORShift64 } from 'random-seedable'
 import { CdrReader, CdrWriter } from '@foxglove/cdr'
-import { ExecutionVisitor } from './executionvisitor'
+import { ExecutionVisitor } from './executionvisitor.js'
+import { randomBytes } from 'crypto'
 
 export abstract class ModuleExecution {
   public readonly module: Module
@@ -9,10 +10,10 @@ export abstract class ModuleExecution {
 
   constructor (module: Module, rngSeed: number|null = null) {
     this.module = module
-    this.rngSeed = rngSeed ?? Math.random()
+    this.rngSeed = rngSeed ?? randomBytes(4).readUInt32BE(0)
   }
 
-  static newForModule (module: Module): ModuleExecution {
+  static newForModule (module: Module): ModuleExecutionStart {
     return new ModuleExecutionStart(module)
   }
 
@@ -53,7 +54,7 @@ export abstract class ModuleExecution {
 
   serialize (): string {
     const writer = new CdrWriter()
-    writer.string(this.module.name)
+    writer.string(this.module.key)
     writer.int32(this.rngSeed)
     writer.int8(this.typeId())
     this.serializeInner(writer)
@@ -171,7 +172,7 @@ export class ModuleExecutionFormativeFeedback extends ModuleExecution {
   }
 
   protected typeId (): number {
-    return ModuleExecutionType.Formative
+    return ModuleExecutionType.FormativeFeedback
   }
 
   protected serializeInner (writer: CdrWriter): void {
@@ -180,12 +181,16 @@ export class ModuleExecutionFormativeFeedback extends ModuleExecution {
   }
 
   public advance (_actionId: string): ModuleExecution {
-    const nextQid = this.questionNumber + 1
+    if (this.isRightAnswer()) {
+      const nextQid = this.questionNumber + 1
 
-    if (nextQid >= this.module.formativeQuestions.length) {
-      return new ModuleExecutionEvaluationPre(this.module)
+      if (nextQid >= this.module.formativeQuestions.length) {
+        return new ModuleExecutionEvaluationPre(this.module)
+      } else {
+        return new ModuleExecutionFormative(this.module, this.rngSeed, nextQid)
+      }
     } else {
-      return new ModuleExecutionFormative(this.module, this.rngSeed, nextQid)
+      return new ModuleExecutionFormative(this.module, this.rngSeed, this.questionNumber)
     }
   }
 
@@ -277,7 +282,7 @@ export class ModuleExecutionEvaluation extends ModuleExecution {
 
   public advance (actionId: string): ModuleExecution {
     const nextQid = this.questionNumber + 1
-    const newScore = this.score + (this.isRightAnswer(actionId) ? this.module.getScoreForRightAnswer() : this.module.getScoreForWrongAnswer())
+    const newScore = this.score + (this.isRightAnswer(actionId) ? 1 : 0)
 
     if (nextQid < this.module.evaluationQuestions.length) {
       return new ModuleExecutionEvaluation(this.module, this.rngSeed, nextQid, newScore)

@@ -1,36 +1,34 @@
-{
-    "name": "m1",
-    "videoUri": "https://tinyurl.com/pqqux9a",
-    "formativeQuestions": [
-        {
-            "question": "dummy formative question 1",
-            "correctAnswers": ["dummy answer 1", "dummy answer 2"],
-            "wrongAnswers": ["dummy answer 3", "dummy answer 4", "dummy answer 5"],
-            "feedbackForCorrect": "dummy feedback for correct",
-            "feedbackForWrong": "dummy feedback for wrong"
-        },
-        {
-            "question": "dummy formative question 2",
-            "correctAnswers": ["dummy answer 1", "dummy answer 2"],
-            "wrongAnswers": ["dummy answer 2", "dummy answer 3", "dummy answer 4"],
-            "feedbackForCorrect": "dummy feedback for correct",
-            "feedbackForWrong": "dummy feedback for wrong"
-        }
-    ],
-    "evaluationQuestions": [
-        {
-            "question": "dummy evaluation question 1",
-            "correctAnswers": ["dummy answer 1", "dummy answer 2"],
-            "wrongAnswers": ["dummy answer 3", "dummy3", "dumm4 answer 4"],
-            "feedbackForCorrec5": "dummy feedback for correct",
-            "feedbackForWrong": "dummy feedback for wrong"
-        },
-        {
-            "question": "dummy evaluation question 2",
-            "correctAnswers": ["dummy answer 1", "dummy answer 2"],
-            "wrongAnswers": ["dummy answer 3", "dummy answer 4", "dummy answer 5"],
-            "feedbackForCorrect": "dummy feedback for correct",
-            "feedbackForWrong": "dummy feedback for wrong"
-        }
-    ]
-}
+name: "[LG 1] Importance of asking questions"
+videoUri: https://youtu.be/ImfU12epYcI?t=95
+description: >
+    During the communication process, asking questions helps us [1]:
+    1.	Clarifying the Information (A good question can create an "aha" moment, which can lead to inovation).
+    2.	Extract more relevant information.
+    3.	Helps us open lines of communications.
+    The use of questioning skills is an important area of verbal communication. By asking questions, you gain answers, understanding, and potentially acceptance for the message sender.
+
+    Questioning Techniques stimulate learning and allow for one to drive clearer ideas and create and incentive to act upon a subject.
+formativeQuestions:
+    - question: Which of the following is **not** a correct application for a question?
+      correctAnswers:
+        - Manipulating the receiver.
+      wrongAnswers:
+        - Establishing rapport.
+        - Clarifying an aspect that is unclear.
+        - Engaging with others.
+      feedbackForCorrect: Correct! Asking questions should be seen as means to share information, not as a way to jeopardize the communication process.
+      feedbackForWrong: One of the incorrect usage of questioning is attempting to manipulate the receiver. Asking questions should be seen as means to share information, not as a way to jeopardize the communication process. 
+evaluationQuestions:
+    - question: Imagine that you are delivering a presentation, and at the end of it, you ask the audience "Do you have anything to add to what has been said?". What does this question intend to establish?
+      correctAnswers:
+        - Opening lines of communication.
+        - Learning more about the receiver.
+      wrongAnswers:
+        - Clarifying an aspect that is unclear.
+      feedbackForCorrect: Well done! A well-placed question can establish some lines of communication. This will allow you to receive more opinions and points-of-view.
+      feedbackForWrong: The correct answers were opening lines of communication and Learning more about the receiver. A well-placed question can establish some lines of communication. This will allow you to receive more opinions and points-of-view.
+references:
+    How do open-ended questions improve interpersonal communication? [1]: https://drwilliamlane.medium.com/how-do-open-ended-questions-improve-interpersonal-communication-7bdef30d0604
+    Why Asking Good Questions Can Help You Be a Better Leader [2]: https://er.educause.edu/blogs/2017/2/why-asking-good-questions-can-help-you-be-a-better-leader
+    The importance of asking questions and doing things for a reason [3]: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7918389/
+funFacts: []

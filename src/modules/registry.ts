@@ -1,9 +1,9 @@
-import { Module } from './module'
+import { Module } from './module.js'
 import fs from 'fs'
 
 
 export class ModuleRegistry {
-  private readonly _modules: {[name: string]: Module} = {}
+  private readonly _modules: {[key: string]: Module} = {}
 
   /**
      * Loads all modules from a directory into a new registry
@@ -14,7 +14,8 @@ export class ModuleRegistry {
     const file_names = fs.readdirSync(path)
     for (const file_name of file_names) {
       const module = Module.fromFile(path + "/" + file_name)
-      reg._modules[module.name] = module
+      module.key = file_name
+      reg._modules[file_name] = module
     }
     
     return reg
@@ -22,9 +23,13 @@ export class ModuleRegistry {
 
   /**
      * Get a module from the registry
-     * @param name module name
+     * @param key module key
      */
-  get (name: string): Module {
-    return this._modules[name]
+  get (key: string): Module {
+    return this._modules[key]
+  }
+
+  entries(): [string, Module][] {
+    return Object.entries(this._modules)
   }
 }

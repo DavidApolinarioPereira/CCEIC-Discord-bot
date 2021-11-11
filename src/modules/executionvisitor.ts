@@ -1,4 +1,4 @@
-import { ModuleExecutionEnd, ModuleExecutionError, ModuleExecutionEvaluation, ModuleExecutionEvaluationPre, ModuleExecutionFormative, ModuleExecutionFormativeFeedback, ModuleExecutionStart } from './execution'
+import { ModuleExecutionEnd, ModuleExecutionError, ModuleExecutionEvaluation, ModuleExecutionEvaluationPre, ModuleExecutionFormative, ModuleExecutionFormativeFeedback, ModuleExecutionStart } from './execution.js'
 
 export abstract class ExecutionVisitor<T> {
   public abstract visitStart (e: ModuleExecutionStart): T

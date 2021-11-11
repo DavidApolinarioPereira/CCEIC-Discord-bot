@@ -1,6 +1,6 @@
-import { runInThisContext } from "vm";
+import {config} from 'dotenv'
 
-require('dotenv').config(); // for .env files
+config() // for .env files
 export default class BotConfiguration {
   private static readonly DISCORD_TOKEN_KEY = 'DISCORD_TOKEN'
   discordToken: string

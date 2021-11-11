@@ -1,0 +1,31 @@
+name: "[LG 11] Probing questions"
+videoUri: "TODO"
+description : >
+    Probing questions can be described as open questions “designed to deepen the knowledge and understanding of information for the person asking the question as well as the person answering” [1]
+    Use cases
+    - Promoting critical thinking
+    - Ensuring you understand something
+    - Uncover secrets
+    - Facilitate brainstorming
+
+formativeQuestions:
+    - question: "Identify the Correct examples of probing questions"
+      correctAnswers: 
+        - Is this what you said?
+        - Did I summarize what you said correctly?
+      wrongAnswers: 
+        - ""
+      feedbackForCorrect: ""
+      feedbackForWrong: ". Clarifying questions are typically brief and are designed to clarify the subject being discussed [1]. Review your choices, you may try again"
+evaluationQuestions:
+    - question: ""
+      correctAnswers: 
+        - ""
+      wrongAnswers: 
+        - ""
+      feedbackForCorrect: ""
+      feedbackForWrong: ""
+references: 
+    Probing Questions [1]: https://www.indeed.com/career-advice/career-development/probing-questions
+funFacts: 
+    - ""

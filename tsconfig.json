@@ -1,7 +1,9 @@
 {
-	"extends": "@tsconfig/node16/tsconfig.json",
+	"extends": "@tsconfig/node14/tsconfig.json",
 
 	"compilerOptions": {
+		"module": "es2020",
+		"moduleResolution": "node",
 		"rootDir": "src",
 		"outDir": "dist",
 		"removeComments": true,
