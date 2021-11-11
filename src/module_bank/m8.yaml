@@ -1,0 +1,45 @@
+name: "[LG 8] Relating the Funnel Technique to requirements gathering"
+videoUri: https://youtu.be/ImfU12epYcI?t=117
+description: >
+  Requirements Gathering refers to the process of defining software requirements and goals[1]. It is commonly divided into three main steps[2]:
+    - Requirements elicitation - Gathering the important requirements from stakeholders, through interviews and meetings.
+    - Requirements documentation - Documentation of the first step, by creating several documents that contain the important information, made available to the development team.
+    - Requirements understanding - After having the needed documentation, meetings are needed, to ensure that everyone understands what is needed, and what will be the best approaches to the problems at hand.
+  When performing the meetings with stakeholders, specially when doing one-on-one meetings, we can use the Funneling Technique to retrieve the necessary information from the Stakeholders.
+  This technique can also be used when performing the third step of the Requirements Gathering process. One can start with an open question and use funneling to get to any details when needed.
+formativeQuestions:
+    - question: What is requirements gathering?
+      correctAnswers:
+        - The process of defining software requirements and goals
+      wrongAnswers:
+        - The process of surveying the target customers
+        - The process of implementing the project
+        - The process of deploying the project
+      feedbackForCorrect: Correct! Requirements gathering is the process of defining software requirements and goals
+    - question: In which **steps** can the Funnel Technique be used in requirements gathering?
+      correctAnswers:
+        - Requirements elicitation
+        - Requirements understanding
+      wrongAnswers:
+        - Requirements documentation
+        - Requirements validation
+      feedbackForCorrect: Correct! The Funnel Technique can be used in requirements elicitation and understanding.
+evaluationQuestions:
+    - question: Imagine you are in a requirements elicitation meeting with the stakeholders. What should you ask first?
+      correctAnswers:
+        - Start by asking an open-question, such as "What's your main goal with this project?"
+      wrongAnswers:
+        - Start by asking a closed-question, such as "Do we need to support SSO?"
+      feedbackForCorrect: This is a good starting point. Asking simple yes/no questions at first will create a better environment for the interviewee. As such, they will gain confidence, and provide better answers down the road.
+      feedbackForWrong: Starting with this question is probably not the best course of action. The interviewee may still not be comfortable, and the value that we can get from their answer will probably be low.
+    - question: After asking some initial questions, how would you follow it up?
+      correctAnswers:
+        - Pick out some yes/no answers, and ask the stakeholder to elaborate, e.g. "Do you want IOS support?".
+      wrongAnswers:
+        - Continue to ask closed questions, e.g. 'Which color palette were you think of?'.
+      feedbackForCorrect: This is a great course of action. After understanding the general requirements trying to get more specific information from the stakeholders.
+      feedbackForWrong: Doing this, while useful at times, will limit the information one can gather from the stakeholder.
+references:
+    What You Need To Know About Requirements Gathering: https://www.wrike.com/blog/requirements-gathering-guide/#What-is-the-requirements-gathering-process
+    10 Steps To Successful Requirements Gathering: https://www.phase2technology.com/blog/successful-requirements-gathering
+funFacts: []

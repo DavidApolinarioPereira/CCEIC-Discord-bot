@@ -29,7 +29,7 @@ description: >
     *Coercive Leading Questions (in other words, Forceful)*
     This questioning type almost suggests a forceful answer, given its structure and makes the respondent feel inclined to answer in a certain manner. An example of this could be: “You enjoyed our services, didn't you?”, where the interrogator is expecting a positive answer to his question.
 formativeQuestions:
-    - question: Please identify the type of this question - "Are you feeling well today?".
+    - question: Please identify the type of this question - "Are you feeling well today?"" (only one is correct).
       correctAnswers:
         - Closed Question
       wrongAnswers:

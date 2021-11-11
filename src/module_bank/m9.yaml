@@ -1,12 +1,18 @@
-name: "[LG 7] The Funnel Technique"
-videoUri: https://youtu.be/ImfU12epYcI?t=95
+name: "[LG 9] Funnel Technique question order"
+videoUri: "TODO"
 description: >
-  Funnel Questioning is a type of questioning technique that incrementally seeks further information, to obtain answers to questions that would be hard to answer without the information recalled from the previous answers.
-    
-  Uses for the Funnel Technique include [2]:
-  1. Obtaining high levels of detail - By focusing on information gathered from answers that the other person has given during the conversation, one can ask about them directly and gather details.
-  2. Making the receiver feel more comfortable - By using easy-to-answer questions at first, one can create a safe and healthy environment that can help the receiver feel more at ease, and in turn, answer more complex and interesting questions.
-  3. Calming a high-tension situation - If someone shows signs of distress, funnel questioning can help one pinpoint what is the cause of it, and let the speaker detail the situation. Afterward, one can then tell the speaker that they are receptive, and suggest solutions to mitigate the problem.
+  The Funneling Technique has two main approaches:
+  1. **Open to closed funnel** - Start by asking open questions, and based on those answers, focus on an important aspect, and try to detail it.
+  2. **Closed to open funnel** - Start by asking closed questions, to get the others at ease, and try to extract more information, by switching to more open questions.
+  This learning module will focus on the Open to Close Funnel.
+
+  To make use of the Funnel Questioning, some steps are shown below:
+  1. Start by asking open questions - Ask questions that allow the interviewee to express themselves. These questions allow the interviewee to elaborate on one or more topics (No simple “Yes” or “No” questions).
+  2. Focus on certain aspects of their response that may interest you. It is very important to use the information provided by the interviewee to funnel the conversation towards our end goal before moving on to closed questions.
+  3. Based on the responses, ask for more details. Ask more specific questions based on the information we retrieved, using closed questions.
+  4. Depending on the situation, decide if it is needed to change topic and return to 1.
+  
+  4. Depending on the situation, decide if it is needed to change topic and return to 1.
 formativeQuestions:
     - question: What is the first step in the funneling questioning technique?
       correctAnswers:
@@ -19,9 +25,9 @@ formativeQuestions:
 evaluationQuestions:
     - question: Imagine that you are interviewing a potential job candidate, and want to learn some details about the person’s past experience. How would you start the interview process
       correctAnswers:
-        - Start by asking an open-question, such as "How was your work environment experience in your last job?"
-      wrongAnswers:
         - Start by asking a closed-question, such as "Did you enjoy the work environment in your workplace?"
+      wrongAnswers:
+        - Start by asking an open-question, such as "How was your work environment experience in your last job?"
       feedbackForCorrect: This is a good starting point. Asking simple yes/no questions at first will create a better environment for the interviewee. As such, they will gain confidence, and provide better answers down the road.
       feedbackForWrong: Starting with this question is probably not the best course of action. The interviewee may still not be comfortable, and the value that we can get from their answer will probably be low.
     - question: After asking some initial questions, how would you follow it up?
@@ -32,7 +38,6 @@ evaluationQuestions:
       feedbackForCorrect: This is a great course of action. After having the interviewee in a relaxed setting, asking for some follow-up will generate much more useful information.
       feedbackForWrong: Doing this, while useful at times, will limit the information one can gather from the interviewee.
 references:
-    Funnel Questions [1]: http://changingminds.org/techniques/questioning/funnel_questions.htm
-    Funnel Questions [2]: https://www.indeed.com/career-advice/interviewing/funnel-questions
+    # [1] Indeed Editorial Team. (2021a, June 10). Funnel Questions: Definition, Benefits and How To Ask Them. Indeed Career Guide. Retrieved November 4th, 2021 from: https://www.indeed.com/career-advice/interviewing/funnel-questions
 funFacts: 
   - Did you know that Funnel Questioning is used by detectives to help the interviewees recall what may have happened?

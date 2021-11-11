@@ -6,12 +6,15 @@ description: >
     - Asking details;
     - Assessing deep knowledge of a subject;
     - Assess communication skills;
-    - See how the respondent thinks (“open ended questions (...) encourages creative answers and self expression” - link to text);
+    - See how the respondent thinks (“open ended questions (...) encourages creative answers and self expression”);
     - Help build rapport;
     - Help uncover previously unspoken needs - respondents are encouraged to provide more information than what was asked
     - Appropriate for giving qualitative information (“more useful, contextual feedback” - [1])
+
+    [1] Blog, F. (2021, March 17). Open Ended Questions: Definition + [30 Questionnaire Examples]. Www.formpl.us. Retrieved on November 4th, 2021 from: https://www.formpl.us/blog/open-ended-questions#:~:text=An%20open%20ended%20question%20is%20designed%20to%20encourage%20a%20full%2C%20meaningful%20and%20deliberate%20answer%20using%20the%20subject%27s%20own%20knowledge%20and/or%20feelings
+    [2] Dossetto, F. (2019). Open-Ended vs. Closed-Ended Questions: User Surveys Examples. Hotjar. Retrieved on November 4th, 2021 from: https://www.hotjar.com/blog/open-ended-questions/
 formativeQuestions:
-    - question: "Identify the Open questions:"
+    - question: "Identify the Open questions. More than one is correct:"
       correctAnswers:
         - What is the most important feature of this product for you?
         - How would you describe your experience in this company?
@@ -30,7 +33,16 @@ evaluationQuestions:
         - Would you recomend our product?
       feedbackForCorrect: "Open questions allow us to develop a better understanding of your customers and their needs, as demonstrated here."
       feedbackForWrong: "Open-ended question when you want to develop a better understanding of your customers and their needs [2]. Check if you are confusing Open questions with closed questions."
+    - question: Identify the open questions
+      correctAnswers:
+        - How would you explain the idea to your co-workers?
+        - What are the best aspects of your project's team?
+      wrongAnswers:
+        - Is this your favorite project?
+        - Is there a problem with the team you are working with?
+      feedbackForCorrect: "Open questions allow us to develop a better understanding of your customers and their needs, as demonstrated here."
+      feedbackForWrong: "Open-ended question when you want to develop a better understanding of your customers and their needs [2]. Check if you are confusing Open questions with closed questions."
 references:
-    Open Ended Questions - Definition + [30 Questionnaire Examples] [1]: https://www.formpl.us/blog/open-ended-questions#:~:text=An%20open%20ended%20question%20is%20designed%20to%20encourage%20a%20full%2C%20meaningful%20and%20deliberate%20answer%20using%20the%20subject%27s%20own%20knowledge%20and/or%20feelings
-    Open Ended Questions [2]: https://www.hotjar.com/blog/open-ended-questions/
+    # [1] Blog, F. (2021, March 17). Open Ended Questions: Definition + [30 Questionnaire Examples]. Www.formpl.us. Retrieved on November 4th, 2021 from: https://www.formpl.us/blog/open-ended-questions#:~:text=An%20open%20ended%20question%20is%20designed%20to%20encourage%20a%20full%2C%20meaningful%20and%20deliberate%20answer%20using%20the%20subject%27s%20own%20knowledge%20and/or%20feelings
+    # [2] Dossetto, F. (2019). Open-Ended vs. Closed-Ended Questions: User Surveys Examples. Hotjar. Retrieved on November 4th, 2021 from: https://www.hotjar.com/blog/open-ended-questions/
 funFacts: []

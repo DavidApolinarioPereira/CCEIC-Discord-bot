@@ -26,27 +26,6 @@ export default class Bot {
     this.client.on('ready', this.readyHandler.bind(this))
     this.client.on('interactionCreate', this.interactionCreateHandler.bind(this))
 
-    this.client.on('messageCreate', (message: any) => {
-      console.log(message)
-      // if (!message.content.startsWith(config.prefix) || message.author.bot) return;
-
-      // // split is wrong
-      // const args = message.content.slice(config.prefix.length).trim().split(/ +/);
-      // const commandName = args.shift().toLowerCase();
-
-      // if (!this.client.commands.has(commandName)) return;
-
-      // const command = this.client.commands.get(commandName);
-
-      // try {
-      //   command.execute(message, args);
-      // } catch (error) {
-      //   console.error(error);
-      //   message.reply("There was an error trying to execute that command!");
-      // }
-    })
-
-
     this.config = config
     this.modules = ModuleRegistry.fromDirectory(config.modulesPath)
   }
@@ -187,14 +166,16 @@ class ModuleExecutionRenderer extends ExecutionVisitor<Promise<void>> {
 
     return {
       content: [
-        `# ${e.module.name}`,
+        `**${e.module.name}**`,
         e.module.description,
         '',
         `Before starting you should check out ${e.module.videoUri}`,
-        '### How will this work',
+        '',
+        '**How will this work**',
         `After clicking next you will answer ${e.module.formativeQuestions.length} questions that should use to improve your knowledge: you can retry them until you answer right!`,
         `Following those, you have the chance to go back to the beginning or start the evaluation.`,
-        '### References',
+        '',
+        '**References**',
         ...Object.entries(e.module.references).map((name, url) => `- ${name}: ${url}`),
         '',
         'See you on the other side!',
@@ -217,8 +198,8 @@ class ModuleExecutionRenderer extends ExecutionVisitor<Promise<void>> {
 
     this.interaction.update({
       content: [
-        `# ${e.module.name}`,
-        `## Question ${e.questionNumber + 1}/${e.module.formativeQuestions.length}`,
+        `**${e.module.name}**`,
+        `**Question ${e.questionNumber + 1}/${e.module.formativeQuestions.length}**`,
         question.question,
         '',
         ...options.map(([answer, _actionId], idx) => `${idx}. ${answer}`)
@@ -237,8 +218,8 @@ class ModuleExecutionRenderer extends ExecutionVisitor<Promise<void>> {
     
     this.interaction.update({
       content: [
-        `# ${e.module.name}`,
-        `## Question ${e.questionNumber +1 }/${e.module.formativeQuestions.length}`,
+        `**${e.module.name}**`,
+        `**Question ${e.questionNumber +1 }/${e.module.formativeQuestions.length}**`,
         feedback,
       ].join('\n'),
       components: [
@@ -255,7 +236,7 @@ class ModuleExecutionRenderer extends ExecutionVisitor<Promise<void>> {
   public async visitEvaluationPre (e: ModuleExecutionEvaluationPre): Promise<void> {
     this.interaction.update({
       content: [
-        `# ${e.module.name}`,
+        `**${e.module.name}**`,
         'Ok, let\'s stop for a second.',
         '',
         'When you click **Next**, you will start your **evaluation**.',
@@ -287,8 +268,8 @@ class ModuleExecutionRenderer extends ExecutionVisitor<Promise<void>> {
 
     this.interaction.update({
       content: [
-        `# ${e.module.name}`,
-        `## Question ${e.questionNumber + 1}/${e.module.evaluationQuestions.length}`,
+        `**${e.module.name}**`,
+        `**Question ${e.questionNumber + 1}/${e.module.evaluationQuestions.length}**`,
         question.question,
         '',
         ...options.map(([answer, _actionId], idx) => `${idx}. ${answer}`)
@@ -311,7 +292,7 @@ class ModuleExecutionRenderer extends ExecutionVisitor<Promise<void>> {
 
     this.interaction.update({
       content: [
-        `# ${e.module.name}`,
+        `**${e.module.name}**`,
         `You scored ${score}% ${score_comment}`,
         arrayShuffle(e.module.funFacts.slice(0))[0] ?? '',
       ].join('\n'),
@@ -328,7 +309,7 @@ class ModuleExecutionRenderer extends ExecutionVisitor<Promise<void>> {
 
   public async visitError (e: ModuleExecutionError): Promise<void> {
     await this.interaction.editReply([
-      `# ${e.module?.name ?? 'Unknown module'}`,
+      `**${e.module?.name ?? 'Unknown module'}**`,
       `Error: ${e.message}`,
       'Manually restart module.',
       'If your name is Sofia, Afonso or Roman please ignore :)'

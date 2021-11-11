@@ -1,0 +1,35 @@
+name: "[LG 11] Leading Questions"
+videoUri: 
+description: >
+  "A leading question is a type of question that prompts a respondent towards providing an already-determined answer. This type of question is suggestive as it is framed in such a way that it implies or points to its answer(s)" (Formplus Blog, 2021)
+
+  There are a few kinds of leading questions (as per Formplus Blog, 2021):
+  - **Assumption-based** - question based in an assumption of the interrogator
+    Example: `How bad was it?` - the other person assumes that *it* was bad
+  - **Direct implication** - directs respondents to "consider the results of their possible perceptions or decisions"
+  - **Coercive/Forceful** - tries to impose a specific answer
+    Example: ``
+formativeQuestions:
+    - question: 
+      correctAnswers:
+        - 
+      wrongAnswers:
+        - 
+        - 
+        - 
+      feedbackForCorrect: 
+      feedbackForWrong: 
+evaluationQuestions:
+    - question: 
+      correctAnswers:
+        - 
+      wrongAnswers:
+        - 
+        - 
+        - 
+      feedbackForCorrect: 
+      feedbackForWrong: 
+references: []
+# [1] Formplus Blog. (2021, July 24). Leading Questions: Definitions, Types, and Examples. Formplus. https://www.formpl.us/blog/leading-question#:~:text=A%20leading%20question%20is%20,to%20its%20answer(s).&text=In%20law%2C%20this%20type%20of,referred%20to%20as%20suggestive%20interrogationa
+# [2] Mellinkoff, D. (n.d.). Loaded questions [Slides]. http://grammar.ucsd.edu/courses/lign105/student-powerpoint/Loaded%20questions.pdf
+funFacts: []
