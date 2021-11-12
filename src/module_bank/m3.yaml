@@ -1,74 +1,70 @@
 name: "[LG 3] Different types of Questions"
-videoUri: "TODO"
+videoUri: "https://www.youtube.com/watch?v=ImfU12epYcI"
 description: >
-    There are several types of questions. This module will highlight four different types.
+  There are several types of questions. This module will highlight four different types.
 
-    **Open Questions**
-    “An open ended question is designed to encourage a full, meaningful, and deliberate answer using the subject's own knowledge and/or feelings”[2].
-    Open Questions have several use cases, for example, asking for details, assessing deep knowledge on a subject, building rapport, etc.
+  **Open Questions**
+  “An open ended question is designed to encourage a full, meaningful, and deliberate answer using the subject's own knowledge and/or feelings” (Formplus Blog, 2021b).
+  Open Questions have several use cases, for example, asking for details, assessing deep knowledge on a subject, building rapport, etc.
 
-    **Closed Questions**
-    “Close-ended questions are question formats that provoke a simple response from a respondent. They are designed such there (sic) isn’t much thought into the single word answer”.[3]
-    “Individuals generally enjoy talking about themselves. If you give then an opportunity, you'll be surprised how much information they'll disclose to you. However, close-ended questions seek the exact opposite. Rather than seek to hear all they have to say, these questions target specifics.”[4]
+  **Closed Questions**
+  “Close-ended questions are question formats that provoke a simple response from a respondent. They are designed such there (sic) isn’t much thought into the single word answer”. (Formplus Blog, 2021a)
+  “Individuals generally enjoy talking about themselves. If you give then an opportunity, you'll be surprised how much information they'll disclose to you. However, close-ended questions seek the exact opposite. Rather than seek to hear all they have to say, these questions target specifics.” (Formplus Blog, 2021a)
 
-    **Probing Questions**
-    Probing questions are open questions “designed to deepen the knowledge and understanding of information for the person asking the question as well as the person answering”.[5]
-    Probing questions have several use cases, namely, promoting critical thinking, uncovering secrets, facilitating brainstorming, etc.
+  **Probing Questions**
+  Probing questions are open questions “designed to deepen the knowledge and understanding of information for the person asking the question as well as the person answering”. (Indeed Editorial Team, 2021b)
+  Probing questions have several use cases, namely, promoting critical thinking, uncovering secrets, facilitating brainstorming, etc.
 
-    **Leading Questions**
-    A leading question is a type of question that prompts a respondent towards providing an already-determined answer. This type of question is suggestive as it is framed in such a way that it implies or points to its answer(s).
+  **Leading Questions**
+  A leading question is a type of question that prompts a respondent towards providing an already-determined answer. This type of question is suggestive as it is framed in such a way that it implies or points to its answer(s). (Formplus Blog, 2021d)
 
-    **Types of Leading Questions**
-    *Assumption Based Leading Questions*
-    This type of Leading Question stems from an assumption from the interrogator. It is commonly applied to feedback surveys where the objective is to test a given assumption. An example of this could be: “How satisfied are you with our product?”, where the interrogator assumes that a given customer must have been satisfied up to a certain degree.
+  **Types of Leading Questions**
+  *Assumption Based Leading Questions*
+  This type of Leading Question stems from an assumption from the interrogator. It is commonly applied to feedback surveys where the objective is to test a given assumption. An example of this could be: “How satisfied are you with our product?”, where the interrogator assumes that a given customer must have been satisfied up to a certain degree.
 
-    *Direct Implication Leading Questions*
-    These question types often ask for the respondents opinion on something. Typically, these are focused on a future occurrence or event. An example could be:
-    “If you enjoyed the restaurant’s space, would you recommend it to your friends?”. It often implies the respondents directly and can make the respondents feel like a key part of a decision.
+  *Direct Implication Leading Questions*
+  These question types often ask for the respondents opinion on something. Typically, these are focused on a future occurrence or event. An example could be:
+  “If you enjoyed the restaurant’s space, would you recommend it to your friends?”. It often implies the respondents directly and can make the respondents feel like a key part of a decision.
 
-    *Coercive Leading Questions (in other words, Forceful)*
-    This questioning type almost suggests a forceful answer, given its structure and makes the respondent feel inclined to answer in a certain manner. An example of this could be: “You enjoyed our services, didn't you?”, where the interrogator is expecting a positive answer to his question.
+  *Coercive Leading Questions (in other words, Forceful)*
+  This questioning type almost suggests a forceful answer, given its structure and makes the respondent feel inclined to answer in a certain manner. An example of this could be: “You enjoyed our services, didn't you?”, where the interrogator is expecting a positive answer to his question.
 formativeQuestions:
-    - question: Please identify the type of this question - "Are you feeling well today?"" (only one is correct).
-      correctAnswers:
-        - Closed Question
-      wrongAnswers:
-        - Open Question
-        - Probing Question
-        - Leading Question
-      feedbackForCorrect: Well done! This particular question is closed. The expected answer is either a yes or a no.
-      feedbackForWrong: This particular question is closed. The expected answer is either a yes or a no.
-    - question: Please identify the type of this question - "Which internet browser do you use?"
-      correctAnswers:
-        - Open Question
-      wrongAnswers:
-        - Closed Question
-        - Probing Question
-        - Leading Question
-      feedbackForCorrect: Well done! This particular question is open. The person being asked the question has the room for expressing their preference.
-      feedbackForWrong: This particular question is open. The person being asked the question has the room for expressing their preference.
+  - question: Please identify the type of this question - "Are you feeling well today?"" (only one is correct).
+    correctAnswers:
+      - Closed Question
+    wrongAnswers:
+      - Open Question
+      - Probing Question
+      - Leading Question
+    feedbackForCorrect: Well done! This particular question is closed.
+    feedbackForWrong: This particular question is a closed question. But don't worry, that is why we have an exercise first!.
+  - question: Please identify the type of this question - "Which internet browser do you use?"
+    correctAnswers:
+      - Open Question
+    wrongAnswers:
+      - Closed Question
+      - Probing Question
+      - Leading Question
+    feedbackForCorrect: Well done! This particular question is open. The person being asked the question has the room for expressing their preference.
+    feedbackForWrong: This particular question is open. The person being asked the question has the room for expressing their preference. You'll get it next time!
 evaluationQuestions:
-    - question: Please identify the type of this question - "What would need to change in order for you to accomplish this?".
-      correctAnswers:
-        - Probing Question
-      wrongAnswers:
-        - Open Question
-        - Closed Question
-        - Leading Question
-      feedbackForCorrect: Well done! This particular question is a probing question. The person asking the question wants to learn about a specific topic, by asking an open-type question, that is directed at a specific topic.
-      feedbackForWrong: This particular question is a probing question. The person asking the question wants to learn about a specific topic, by asking an open-type question, that is directed at a specific topic.
-    - question: Please identify the type of this question - (A policeman that has just witnessed a driver cut a STOP sign) "You didn’t see the stop sign, did you?"
-      correctAnswers:
-        - Coercive Leading Question
-      wrongAnswers:
-        - Assumption Based Leading Question
-        - Direct Implication Leading Question
-      feedbackForCorrect: Well done! This particular question is created in such a way, that the responder is forced to say no.
-      feedbackForWrong: The correct answer is Coercive Leading Question. This particular question is created in such a way, that the responder is forced to say no.
+  - question: Please identify the type of this question - "What would need to change in order for you to accomplish this?".
+    correctAnswers:
+      - Probing Question
+    wrongAnswers:
+      - Open Question
+      - Closed Question
+      - Leading Question
+    feedbackForCorrect: Well done! This particular question is a probing question. The person asking the question wants to learn about a specific topic, by asking an open-type question, that is directed at a specific topic.
+    feedbackForWrong: This particular question is a probing question. The person asking the question wants to learn about a specific topic, by asking an open-type question, that is directed at a specific topic. 
+  - question: Please identify the type of this question - (A policeman that has just witnessed a driver cut a STOP sign) "You didn’t see the stop sign, did you?"
+    correctAnswers:
+      - Coercive Leading Question
+    wrongAnswers:
+      - Assumption Based Leading Question
+      - Direct Implication Leading Question
+    feedbackForCorrect: Well done! This particular question is created in such a way, that the responder is forced to say no.
+    feedbackForWrong: The correct answer is Coercive Leading Question. This particular question is created in such a way, that the responder is forced to say no.
 references:
-    What is a Leading Question [1]: https://www.formpl.us/blog/leading-question#:~:text=A%20leading%20question%20is%20a,to%20its%20answer(s).&text=In%20law%2C%20this%20type%20of,referred%20to%20as%20suggestive%20interrogation
-    Open Ended Questions [2]: https://www.formpl.us/blog/open-ended-questions#:~:text=An%20open%20ended%20question%20is%20designed%20to%20encourage%20a%20full%2C%20meaningful%20and%20deliberate%20answer%20using%20the%20subject%27s%20own%20knowledge%20and/or%20feelings.
-    Close Ended Questions [3]: https://www.formpl.us/blog/close-ended-questions#:~:text=Close-ended%20questions%20are%20question%20formats%20that%20provoke%20a%20simple%20response%20from%20a%20respondent.%20They%20are%20designed%20such%20there%20isn%E2%80%99t%20much%20thought%20into%20the%20single%20word%20answer.
-    Close Ended Questions - Definition [4]: https://www.formpl.us/blog/close-ended-questions#:~:text=Individuals%20generally%20enjoy%20talking%20about%20themselves.%20If%20you%20give%20then%20an%20opportunity%2C%20you%27ll%20be%20surprised%20how%20much%20information%20they%27ll%20disclose%20to%20you.%20However%2C%20close-ended%20questions%20seek%20the%20exact%20opposite.%20Rather%20than%20seek%20to%20hear%20all%20they%20have%20to%20say%2C%20these%20questions%C2%A0target%20specifics.
-    Probing Questions [5]: https://www.indeed.com/career-advice/career-development/probing-questions#:~:text=designed%20to%20deepen%20the%20knowledge%20and%20understanding%20of%20information%20for%20the%20person%20asking%20the%20question%20as%20well%20as%20the%20person%20answering.
+  Find the references for this module at: https://docs.google.com/document/d/1e44ey5J2ASQOrHIXp5F7blnU6Lqx132j-jjESOT7hkM/edit?usp=sharing
 funFacts: []

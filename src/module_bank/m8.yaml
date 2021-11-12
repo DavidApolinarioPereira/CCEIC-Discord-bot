@@ -1,10 +1,10 @@
-name: "[LG 8] Relating the Funnel Technique to requirements gathering"
+name: "[LG 8] Relating the Funnel Technique to Requirements Gathering"
 videoUri: https://youtu.be/ImfU12epYcI?t=117
 description: >
   Requirements Gathering refers to the process of defining software requirements and goals (Boogaard, 2021). It is commonly divided into three main steps (Hirsch, 2017):
-    - Requirements elicitation - Gathering the important requirements from stakeholders, through interviews and meetings.
-    - Requirements documentation - Documentation of the first step, by creating several documents that contain the important information, made available to the development team.
-    - Requirements understanding - After having the needed documentation, meetings are needed, to ensure that everyone understands what is needed, and what will be the best approaches to the problems at hand.
+    - **Requirements elicitation** - Gathering the important requirements from stakeholders, through interviews and meetings.
+    - **Requirements documentation** - Documentation of the first step, by creating several documents that contain the important information, made available to the development team.
+    - **Requirements understanding** - After having the needed documentation, meetings are needed, to ensure that everyone understands what is needed, and what will be the best approaches to the problems at hand.
   When performing the meetings with stakeholders, specially when doing one-on-one meetings, we can use the Funneling Technique to retrieve the necessary information from the Stakeholders.
   This technique can also be used when performing the third step of the Requirements Gathering process. One can start with an open question and use funneling to get to any details when needed.
 formativeQuestions:
@@ -40,6 +40,5 @@ evaluationQuestions:
       feedbackForCorrect: This is a great course of action. After understanding the general requirements trying to get more specific information from the stakeholders.
       feedbackForWrong: Doing this, while useful at times, will limit the information one can gather from the stakeholder.
 references:
-    "Boogaard, K. (2021, January 27). A Guide to Requirements Gathering | Wrike. Www.wrike.com. Retrieved November 4th, 2021 from: https://www.wrike.com/blog/requirements-gathering-guide/#What-is-the-requirements-gathering-process"
-    "Hirsch, J. (2017, April 11). 10 Steps To Successful Requirements Gathering. Phase2. Retrieved November 4th, 2021 from: https://www.phase2technology.com/blog/successful-requirements-gathering"
+  Find the references for this module at: https://docs.google.com/document/d/1e44ey5J2ASQOrHIXp5F7blnU6Lqx132j-jjESOT7hkM/edit?usp=sharing
 funFacts: []

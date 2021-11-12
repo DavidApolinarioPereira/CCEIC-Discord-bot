@@ -1,43 +1,42 @@
-name: "[LG 9] Funnel Technique question order"
+name: "[LG 9] Learning the Funnel Technique question order"
 videoUri: "TODO"
 description: >
   The Funneling Technique has two main approaches:
   1. **Open to closed funnel** - Start by asking open questions, and based on those answers, focus on an important aspect, and try to detail it.
   2. **Closed to open funnel** - Start by asking closed questions, to get the others at ease, and try to extract more information, by switching to more open questions.
+  
   This learning module will focus on the Open to Close Funnel.
 
-  To make use of the Funnel Questioning, some steps are shown below:
+  To make use of the Funnel Questioning, some steps are shown below (Indeed Editorial Team, 2021):
   1. Start by asking open questions - Ask questions that allow the interviewee to express themselves. These questions allow the interviewee to elaborate on one or more topics (No simple “Yes” or “No” questions).
   2. Focus on certain aspects of their response that may interest you. It is very important to use the information provided by the interviewee to funnel the conversation towards our end goal before moving on to closed questions.
   3. Based on the responses, ask for more details. Ask more specific questions based on the information we retrieved, using closed questions.
   4. Depending on the situation, decide if it is needed to change topic and return to 1.
-  
-  4. Depending on the situation, decide if it is needed to change topic and return to 1.
 formativeQuestions:
-    - question: What is the first step in the funneling questioning technique?
-      correctAnswers:
-        - Asking Open Questions
-      wrongAnswers:
-        - Asking for detail on a certain topic
-        - Asking Closed Questions
-      feedbackForCorrect: Correct! Asking Open Ended questions creates an environment that allows the speaker to recall information and really dive into the details.
-      feedbackForWrong: Asking Open Ended questions creates an environment that allows the speaker to recall information and really dive into the details.
+  - question: What is the first step in the funneling questioning technique?
+    correctAnswers:
+      - Asking Open Questions
+    wrongAnswers:
+      - Asking for detail on a certain topic
+      - Asking Closed Questions
+    feedbackForCorrect: Correct! Asking Open Ended questions creates an environment that allows the speaker to recall information and really dive into the details.
+    feedbackForWrong: Asking Open Ended questions creates an environment that allows the speaker to recall information and really dive into the details.
 evaluationQuestions:
-    - question: Imagine that you are interviewing a potential job candidate, and want to learn some details about the person’s past experience. How would you start the interview process
-      correctAnswers:
-        - Start by asking a closed-question, such as "Did you enjoy the work environment in your workplace?"
-      wrongAnswers:
-        - Start by asking an open-question, such as "How was your work environment experience in your last job?"
-      feedbackForCorrect: This is a good starting point. Asking simple yes/no questions at first will create a better environment for the interviewee. As such, they will gain confidence, and provide better answers down the road.
-      feedbackForWrong: Starting with this question is probably not the best course of action. The interviewee may still not be comfortable, and the value that we can get from their answer will probably be low.
-    - question: After asking some initial questions, how would you follow it up?
-      correctAnswers:
-        - Pick out some yes/no answers, and ask the interviewee to elaborate, e.g. "Could you tell me why you did/didn’t like the environment?".
-      wrongAnswers:
-        - Continue to ask closed questions, e.g. 'Do you enjoy working in this field?'.
-      feedbackForCorrect: This is a great course of action. After having the interviewee in a relaxed setting, asking for some follow-up will generate much more useful information.
-      feedbackForWrong: Doing this, while useful at times, will limit the information one can gather from the interviewee.
+  - question: Imagine that you are interviewing a potential job candidate, and want to learn some details about the person’s past experience. How would you start the interview process
+    correctAnswers:
+      - Start by asking a closed-question, such as "Did you enjoy the work environment in your workplace?"
+    wrongAnswers:
+      - Start by asking an open-question, such as "How was your work environment experience in your last job?"
+    feedbackForCorrect: That is correct, this is a good starting point. Asking simple yes/no questions at first will create a better environment for the interviewee. As such, they will gain confidence, and provide better answers down the road.
+    feedbackForWrong: Starting with this question is probably not the best course of action. The interviewee may still not be comfortable, and the value that we can get from their answer will probably be low.
+  - question: After asking some initial questions, how would you follow it up?
+    correctAnswers:
+      - Pick out some yes/no answers, and ask the interviewee to elaborate, e.g. "Could you tell me why you did/didn’t like the environment?".
+    wrongAnswers:
+      - Continue to ask closed questions, e.g. 'Do you enjoy working in this field?'.
+    feedbackForCorrect: Correct, this is a great course of action. After having the interviewee in a relaxed setting, asking for some follow-up will generate much more useful information.
+    feedbackForWrong: Doing this, while useful at times, will limit the information one can gather from the interviewee.
 references:
-    # [1] Indeed Editorial Team. (2021a, June 10). Funnel Questions: Definition, Benefits and How To Ask Them. Indeed Career Guide. Retrieved November 4th, 2021 from: https://www.indeed.com/career-advice/interviewing/funnel-questions
+  Find the references for this module at: https://docs.google.com/document/d/1e44ey5J2ASQOrHIXp5F7blnU6Lqx132j-jjESOT7hkM/edit?usp=sharing
 funFacts: 
   - Did you know that Funnel Questioning is used by detectives to help the interviewees recall what may have happened?
