@@ -1,6 +1,6 @@
 name: "[LG 1] Importance of asking questions"
 videoUri: https://youtu.be/ImfU12epYcI?t=95
-description: >
+description: |
   Asking questions is something really important, especially in a work environment. Much of our time is spent asking others for information, clarification of something previously said etc. 
   Therefore, it is important to have some insight on some Questioning Techniques when communicating.
   During the communication process, asking questions helps us (Lane, 2019):
@@ -8,8 +8,7 @@ description: >
   - Extract more relevant information
   - Create a focused on what is important for us
 
-  The use of questioning techniques is an important area of verbal communication. By asking questions, you gain answers, understanding, and potentially acceptance for the message sender. 
-  You can also stimulate learning and allow for one to drive clearer ideas and create and incentive to act upon a subject.
+  The use of questioning techniques is an important area of verbal communication. By asking questions, you gain answers, understanding, and potentially acceptance for the message sender. You can also stimulate learning and allow for one to drive clearer ideas and create and incentive to act upon a subject.
 formativeQuestions:
   - question: Which of the following is **not** a correct application for a question?
     correctAnswers:
@@ -30,5 +29,5 @@ evaluationQuestions:
     feedbackForCorrect: Well done! A well-placed question can establish some lines of communication. This will allow you to receive more opinions and points-of-view.
     feedbackForWrong: The correct answers were opening lines of communication and Learning more about the receiver. A well-placed question can establish some lines of communication. This will allow you to receive more opinions and points-of-view.
 references:
-    Find the references for this module at: https://docs.google.com/document/d/1e44ey5J2ASQOrHIXp5F7blnU6Lqx132j-jjESOT7hkM/edit?usp=sharing
+    Find the references for this module at: "https://docs.google.com/document/d/1e44ey5J2ASQOrHIXp5F7blnU6Lqx132j-jjESOT7hkM/edit?usp=sharing"
 funFacts: []

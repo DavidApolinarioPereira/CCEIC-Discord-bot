@@ -1,6 +1,6 @@
 name: "[LG 2] Role of asking questions in a professional context"
 videoUri: https://youtu.be/ImfU12epYcI?t=95
-description: >
+description: |
     In the professional context, the ability to ask questions increases our management abilities. Some of these abilities include (Chisholm, 2020): 
     - Being eager to learn and accepting new ideas and points of view and not letting hierarchy interfere with learning.
     - Eager to engage and pay attention to the response given by our colleagues.
@@ -16,8 +16,8 @@ formativeQuestions:
     wrongAnswers:
       - Ask questions without considering the answer of the respondant to frame your next question 
       - Ask questions, even if they don't necessarily give you the most relevant information
-    feedbackForCorrect: "Always plan your questions and try to have an open conversation, inviting the respondant to talk."
-    feedbackForWrong: "Always try to frame the next question even if this takes you off the planned path. All the questions you ask should bring something relevant to you."
+    feedbackForCorrect: "You are correct. Always plan your questions and try to have an open conversation, inviting the respondant to talk."
+    feedbackForWrong: "Mmmm, maybe you need to revise that again. Always try to frame the next question even if this takes you off the planned path. All the questions you ask should bring something relevant to you."
 evaluationQuestions:
   - question: "In a work environment, a colleague should (Indeed Editorial Team, 2021): (More than one answer is correct)" 
     correctAnswers:
@@ -31,5 +31,5 @@ evaluationQuestions:
       Not bad. However, we would like to point you in a different direction: you should avoid interrupting the speaker, even if it seems like you absolutely need to and feel it is the right point of the conversation to do so. 
       Furthermore, always let the speaker finish before starting to talk. Try to focus on a specific topic instead of just asking generic questions. This will improve your questioning techniques!
 references:
-  Find the references for this module at: https://docs.google.com/document/d/1e44ey5J2ASQOrHIXp5F7blnU6Lqx132j-jjESOT7hkM/edit?usp=sharing
+  Find the references for this module at: "https://docs.google.com/document/d/1e44ey5J2ASQOrHIXp5F7blnU6Lqx132j-jjESOT7hkM/edit?usp=sharing"
 funFacts: []

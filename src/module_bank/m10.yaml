@@ -1,6 +1,6 @@
 name: "[LG 10] Paraphrasing"
 videoUri: "https://www.youtube.com/watch?v=Hx0HCh8mll0&t=129s"
-description : >
+description : |
   Paraphrasing, is the act of rewriting a section of text using your own words. It can help you convey the meaning of the presented information in a clearer way. Although the text is written in your own words you should always cite the passage you have utilized.
   Mostly, Paraphrasing is used since the original text we are citing does not coincide with the way we structure our sentences or even with the words we use. This can make it seem like it is out of place (no writer wants the reader to notice an abrupt change when reading his/her text).
 
@@ -15,8 +15,8 @@ formativeQuestions:
       - "Teachers use differentiated instruction to help students learn, allowing the teacher to cater lessons to the way each student learns and each student's skill (Thompson, 2009)."
     wrongAnswers:
       - "Differentiation is a way to encourage equality between the approach and talent of the student (Thompson, 2009). This type of instruction gives students different ways to deal with and grasp information, and for establishing new learning to move on in education (Thompson, 2009)."
-    feedbackForCorrect: "This paraphrasing includes the reference from the original article and also manages to use the correct Paraphrtase techniques"
-    feedbackForWrong: "A reference is included, however, this Paraphrasing uses many similar words when compared to the original article."
+    feedbackForCorrect: "Correct. This paraphrasing includes the reference from the original article and also manages to use the correct Paraphrasing techniques"
+    feedbackForWrong: "A reference is included, however, this Paraphrasing uses many similar words when compared to the original article. You will get it next time. Feel free to try again!"
 evaluationQuestions:
   - question: >
       Try to detect which is the correct Answer:
@@ -29,6 +29,6 @@ evaluationQuestions:
     feedbackForCorrect: "Notice the Reference to the original Article is present in the second version. When Paraphrasing, always include References to what you are Paraphrasing."
     feedbackForWrong: "There are two errors with this approach. Notice that there is no Reference in the text. Also, notice how similar the original text is to the paraphrased one."
 references:
-  Find the references for this module at: https://docs.google.com/document/d/1e44ey5J2ASQOrHIXp5F7blnU6Lqx132j-jjESOT7hkM/edit?usp=sharing
+  Find the references for this module at: "https://docs.google.com/document/d/1e44ey5J2ASQOrHIXp5F7blnU6Lqx132j-jjESOT7hkM/edit?usp=sharing"
 funFacts:
-  - "Here is a cool fact before you go: A study (Landau et. al., 2002) also presented students with rewritten passages from an original paragraph. The students selected the passages they thought were plagiarized. After that, the students were either given no feedback, feedback only, examples only, or feedback with examples. The results showed that either giving students feedback, examples of what a correct solution would be, or both improved the ability for the students to detect plagiarism."
+  - "Here is a cool fact before you go: A study (Landau et. al., 2002) also presented students with rewritten passages from an original paragraph, using Paraphrasing techniques. The students selected the passages they thought were plagiarized. After that, the students were either given no feedback, feedback only, examples only, or feedback with examples. The results showed that either giving students feedback, examples of what a correct solution would be, or both improved the ability for the students to detect plagiarism. So, paraphrasing can reduce plagiarism, isn't that great?"

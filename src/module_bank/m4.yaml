@@ -1,12 +1,12 @@
-name: "[LG 4] Define, identify and use open questions"
+name: "[LG 4] Define, identify and use Open Questions"
 videoUri: "https://www.youtube.com/watch?v=_gjeTDH4XjU"
-description: >
+description: |
   “An open ended question is designed to encourage a full, meaningful, and deliberate answer using the subject's own knowledge and/or feelings.”  (Formplus Blog, 2021)
   Use cases
   - Asking details;
   - Assessing deep knowledge of a subject;
   - Assess communication skills;
-  - See how the respondent thinks (“open ended questions (...) encourages creative answers and self expression”);
+  - See how the respondent thinks (“open ended questions (...) encourages creative answers and self expression” (Formplus Blog, 2021b));
   - Help build rapport;
   - Help uncover previously unspoken needs - respondents are encouraged to provide more information than what was asked
   - Appropriate for giving qualitative information (“more useful, contextual feedback” - (Formplus Blog, 2021b))
@@ -18,8 +18,8 @@ formativeQuestions:
     wrongAnswers:
       - Did you like our product?
       - Are you happy with your experience in this company?
-    feedbackForCorrect: Open questions allow us to develop a better understanding of your customers and their needs, as demonstrated here.
-    feedbackForWrong: You might be confusing closed questions with open questions. Open-ended question when you want to develop a better understanding of your customers and their needs [2].
+    feedbackForCorrect: You are correct!. Open questions allow us to develop a better understanding of your customers and their needs, as demonstrated here.
+    feedbackForWrong: Mmmm, you might want to review your answer. You might be confusing closed questions with open questions. Open-ended question can be used when you want to develop a better understanding of your customers and their needs [2].
 evaluationQuestions:
   - question: Identify one Open question! (More than one answer is correct)
     correctAnswers:
@@ -40,6 +40,6 @@ evaluationQuestions:
     feedbackForCorrect: You are correct! Open questions allow us to develop a better understanding of your customers and their needs, as demonstrated here.
     feedbackForWrong: That was unfortunately not an Open ended Question. "Open-ended question when you want to develop a better understanding of your customers and their needs" (Dossetto, 2019). Feel free to try again!
 references:
-  Find the references for this module at: https://docs.google.com/document/d/1e44ey5J2ASQOrHIXp5F7blnU6Lqx132j-jjESOT7hkM/edit?usp=sharing
+  Find the references for this module at: "https://docs.google.com/document/d/1e44ey5J2ASQOrHIXp5F7blnU6Lqx132j-jjESOT7hkM/edit?usp=sharing"
 funFacts:
   - "Here is something funny for you to see before you go. Enjoy!: https://www.youtube.com/watch?v=tU8U-vXdKz4"

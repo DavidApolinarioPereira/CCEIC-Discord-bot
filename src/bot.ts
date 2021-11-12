@@ -20,7 +20,6 @@ export default class Bot {
         Discord.Intents.FLAGS.GUILDS,
         Discord.Intents.FLAGS.GUILD_MESSAGES,
       ]
-  
     })
 
     this.client.on('ready', this.readyHandler.bind(this))
@@ -166,17 +165,16 @@ class ModuleExecutionRenderer extends ExecutionVisitor<Promise<void>> {
 
     return {
       content: [
-        `**${e.module.name}**`,
+        `__**${e.module.name}**__`,
+        '',
         e.module.description,
         '',
-        `Before starting you should check out ${e.module.videoUri}`,
-        '',
-        '**How will this work**',
+        e.module.videoUri !== "" ? `Before starting you should check out ${e.module.videoUri}` : '',
+        '**How will this work?**',
         `After clicking next you will answer ${e.module.formativeQuestions.length} questions that should use to improve your knowledge: you can retry them until you answer right!`,
         `Following those, you have the chance to go back to the beginning or start the evaluation.`,
-        '',
         '**References**',
-        ...Object.entries(e.module.references).map((name, url) => `- ${name}: ${url}`),
+        ...Object.entries(e.module.references).map(([name, link]) => `- ${name}: ${link}`),
         '',
         'See you on the other side!',
       ].join('\n'),
@@ -294,6 +292,7 @@ class ModuleExecutionRenderer extends ExecutionVisitor<Promise<void>> {
       content: [
         `**${e.module.name}**`,
         `You scored ${score}% ${score_comment}`,
+        '',
         arrayShuffle(e.module.funFacts.slice(0))[0] ?? '',
       ].join('\n'),
       components: [new MessageActionRow().addComponents(

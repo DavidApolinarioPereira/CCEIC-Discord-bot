@@ -1,6 +1,6 @@
 name: "[LG 6] Probing questions"
 videoUri: "https://www.youtube.com/watch?v=5P73EER3T7Y"
-description : >
+description: |
   Probing questions can be described as open questions “designed to deepen the knowledge and understanding of information for the person asking the question as well as the person answering” (Indeed Editorial Team, 2018)
   Simply put, probing questions are intended to help the speaker think more deeply about the issue at hand. It can be as simple as asking the respondant for an example to help one understand something they have said (Mind Tools Content Team, 2009).    
   Use cases
@@ -8,23 +8,19 @@ description : >
   - Ensuring you understand something
   - Uncover secrets
   - Facilitate brainstorming
-
-  "Probing questions are good for:
-  - Gaining clarification to ensure that you have the whole story and that you understand it thoroughly.
-  - Drawing information out of people who are trying to avoid telling you something." (Mind Tools Content Team, 2009)
 formativeQuestions:
   - question: Please, identify the correct examples of probing questions. (More than 1 option is correct)
-    correctAnswers: 
+    correctAnswers:
       - Is this what you said?
       - Did I summarize what you said correctly?
-    wrongAnswers: 
+    wrongAnswers:
       - Did you understand what I said?
       - Would you recommend our product to your colleagues?
     feedbackForCorrect: Correct! Probing questions are typically brief and are designed to clarify the subject being discussed (Indeed Editorial Team, 2018).
     feedbackForWrong: The question you selected is a Closed Ended Question. Probing questions are typically brief and are designed to clarify the subject being discussed (Indeed Editorial Team, 2018). Review your choices, you may try again.
 evaluationQuestions:
   - question: Please, identify the correct examples of probing questions. (More than 1 option is correct)
-    correctAnswers: The question you selected is a Closed Ended Question. Probing questions are typically brief and are designed to clarify the subject being discussed (Indeed Editorial Team, 2018). Review your choices, you may try again.
+    correctAnswers:
       - Why do you think that is?
       - How did you come to this conclusion?
     wrongAnswers:
@@ -39,7 +35,7 @@ evaluationQuestions:
       - How can I help you in what you were looking for?
       - Have you already completed the assignment I gave you?
     feedbackForCorrect: Correct! Probing questions are typically brief and are designed to clarify the subject being discussed (Indeed Editorial Team, 2018).
-    feedbackForWrong: 
-references: 
-  Find the references for this module at: https://docs.google.com/document/d/1e44ey5J2ASQOrHIXp5F7blnU6Lqx132j-jjESOT7hkM/edit?usp=sharing
+    feedbackForWrong: The question you selected is a Closed Ended Question. Probing questions are typically brief and are designed to clarify the subject being discussed (Indeed Editorial Team, 2018). Review your choices, you may try again.
+references:
+  Find the references for this module at: "https://docs.google.com/document/d/1e44ey5J2ASQOrHIXp5F7blnU6Lqx132j-jjESOT7hkM/edit?usp=sharing"
 funFacts: []

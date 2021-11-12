@@ -1,6 +1,6 @@
 name: "[LG 7] The Funnel Technique"
 videoUri: https://youtu.be/ImfU12epYcI?t=95
-description: >
+description: |
   Funnel Questioning is a type of questioning technique that incrementally seeks further information, to obtain answers to questions that would be hard to answer without the information recalled from the previous answers.
 
   Uses for the Funnel Technique include (Indeed Editorial Team, 2021):
@@ -27,11 +27,12 @@ evaluationQuestions:
   - question: After asking some initial questions, how would you follow it up?
     correctAnswers:
       - Pick out some yes/no answers, and ask the interviewee to elaborate, e.g. "Could you tell me why you did/didn’t like the environment?".
+      - Ask closed questions, e.g. 'Do you enjoy working in this field?'.
     wrongAnswers:
-      - Continue to ask closed questions, e.g. 'Do you enjoy working in this field?'.
+      - Continue asking Open questions.
     feedbackForCorrect: This is a great course of action. After having the interviewee in a relaxed setting, asking for some follow-up will generate much more useful information.
-    feedbackForWrong: Doing this, while useful at times, will limit the information one can gather from the interviewee.
+    feedbackForWrong: Doing this, while useful at times, will limit the information one can gather from the interviewee, and broaden the scope of the conversation.
 references:
-  Find the references for this module at: https://docs.google.com/document/d/1e44ey5J2ASQOrHIXp5F7blnU6Lqx132j-jjESOT7hkM/edit?usp=sharing
+  Find the references for this module at: "https://docs.google.com/document/d/1e44ey5J2ASQOrHIXp5F7blnU6Lqx132j-jjESOT7hkM/edit?usp=sharing"
 funFacts: 
   - "Did you know that Funnel Questioning is used by detectives to help the interviewees recall what may have happened? Interesting right? If you want to research more about this, start with this interesting article: http://davidmatsumoto.com/content/TPjan15-info-mat-hwa-sand%201.pdf"
