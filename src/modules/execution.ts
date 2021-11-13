@@ -350,7 +350,7 @@ export class ModuleExecutionError extends ModuleExecution {
     return ModuleExecutionType.Error
   }
 
-  protected serializeInner (writer: CdrWriter) {
+  protected serializeInner (writer: CdrWriter): void {
     writer.string(this.message)
   }
 

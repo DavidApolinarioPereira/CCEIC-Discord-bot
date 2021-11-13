@@ -1,11 +1,11 @@
 import Bot from './bot.js'
 import BotConfiguration from './config.js'
 
-function main (): void {
+async function main (): Promise<void> {
   const config = BotConfiguration.fromEnv()
   const bot = new Bot(config)
 
-  bot.start()
+  await bot.start()
 }
 
 main()

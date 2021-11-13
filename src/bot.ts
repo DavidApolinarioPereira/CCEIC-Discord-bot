@@ -1,4 +1,4 @@
-import { SlashCommandBuilder, SlashCommandStringOption } from '@discordjs/builders'
+import { SlashCommandBuilder } from '@discordjs/builders'
 import Discord, { CommandInteraction, MessageActionRow } from 'discord.js'
 import { MessageButtonStyles } from 'discord.js/typings/enums'
 import BotConfiguration from './config.js'
@@ -20,7 +20,7 @@ export default class Bot {
     this.client = new Discord.Client({
       intents: [
         Discord.Intents.FLAGS.GUILDS,
-        Discord.Intents.FLAGS.GUILD_MESSAGES,
+        Discord.Intents.FLAGS.GUILD_MESSAGES
       ]
     })
 
@@ -31,79 +31,78 @@ export default class Bot {
     this.modules = ModuleRegistry.fromDirectory(config.modulesPath)
   }
 
-  readyHandler (): void {
+  async readyHandler (): Promise<void> {
     console.log('Bot up!')
-    this.registerCommands()
+    await this.registerCommands()
   }
 
-  registerCommands() {
-    const clientId = "907322243586089034"
-    const guildId = "893092430935646209"
+  async registerCommands (): Promise<void> {
+    const clientId = '907322243586089034'
+    const guildId = '893092430935646209'
     const commands: RESTPostAPIApplicationCommandsJSONBody[] = []
 
     commands.push(
       new SlashCommandBuilder()
-        .setName("start")
-        .setDescription("start a module")
-        .addStringOption(option => 
+        .setName('start')
+        .setDescription('start a module')
+        .addStringOption(option =>
           option
-            .setName("module")
-            .setDescription("module name")
+            .setName('module')
+            .setDescription('module name')
             .addChoices(this.modules.entries().map(([key, mod]) => [mod.name, key]))
             .setRequired(true)
         )
         .setDefaultPermission(true)
         .toJSON()
     )
-    const rest = new REST({ version: '9' }).setToken(this.config.discordToken);
+    const rest = new REST({ version: '9' }).setToken(this.config.discordToken)
 
-    (async () => {
-      try {
-        console.log('Started refreshing application (/) commands.');
-        console.log(Routes)
+    try {
+      console.log('Started refreshing application (/) commands.')
+      console.log(Routes)
 
+      await rest.put(
+        Routes.applicationGuildCommands(clientId, guildId),
+        { body: commands }
+      )
 
-        await rest.put(
-          Routes.applicationGuildCommands(clientId, guildId),
-          { body: commands },
-        );
-
-        console.log('Successfully reloaded application (/) commands.');
-      } catch (error) {
-        console.error(error);
-      }
-    })();
+      console.log('Successfully reloaded application (/) commands.')
+    } catch (error) {
+      console.error(error)
+    }
   }
 
   async interactionCreateHandler (interaction: Discord.Interaction): Promise<void> {
     switch (interaction.type) {
       case 'APPLICATION_COMMAND':
-        let cmd = interaction as CommandInteraction
-        await cmd.deferReply({ ephemeral: true })
-        
-        try {
-          switch (cmd.commandName) {
-            case 'start':
-              await this.startModule(cmd)
-              break
-            default:
-              throw new Error('No such command')
+        {
+          const cmd = interaction as CommandInteraction
+          await cmd.deferReply({ ephemeral: true })
+
+          try {
+            switch (cmd.commandName) {
+              case 'start':
+                await this.startModule(cmd)
+                break
+              default:
+                throw new Error('No such command')
+            }
+          } catch (e) {
+            console.error(e)
+            console.error((e as Error).stack)
+            await cmd.editReply(`Error executing command: ${e}`)
           }
-        } catch (e) {
-          console.error(e)
-          console.error((e as Error).stack)
-          cmd.editReply(`Error executing command: ${e}`)
         }
         break
       case 'MESSAGE_COMPONENT':
         if (interaction.isButton()) {
-          this.handleButtonInteraction(interaction as Discord.ButtonInteraction)
+          await this.handleButtonInteraction(interaction)
         }
         break
     }
   }
 
-  handleButtonInteraction(interaction: Discord.ButtonInteraction): void {
+  async handleButtonInteraction (interaction: Discord.ButtonInteraction): Promise<void> {
     let [state, actionId] = this.parseButtonId(interaction.customId)
     console.log('state at button press:')
     console.log(state)
@@ -112,15 +111,16 @@ export default class Bot {
     console.log(state)
 
     const renderer = new ModuleExecutionRenderer(this, interaction)
-    state.accept(renderer)
+    await state.accept(renderer)
   }
 
-  private parseButtonId(customId: string): [ModuleExecution, string] {
+  private parseButtonId (customId: string): [ModuleExecution, string] {
     const [actionId, serializedState, _buttonId] = customId.split('-', 3)
+
     return [ModuleExecution.deserialize(serializedState, this.modules), actionId]
   }
 
-  createButtonId(state: ModuleExecution, actionId: string, buttonId: number): string {
+  createButtonId (state: ModuleExecution, actionId: string, buttonId: number): string {
     const serializedState = state.serialize()
     return `${actionId}-${serializedState}-${buttonId}`
   }
@@ -129,7 +129,7 @@ export default class Bot {
     const moduleName = interaction.options.getString('module', true)
     const module = this.modules.get(moduleName)
     const execution = ModuleExecution.newForModule(module)
-    
+
     await ModuleExecutionRenderer.initialInteraction(execution, interaction, this)
   }
 
@@ -140,15 +140,15 @@ export default class Bot {
 
 class ModuleExecutionRenderer extends ExecutionVisitor<Promise<void>> {
   private buttonId = 0
-  
-  constructor(
+
+  constructor (
     private readonly bot: Bot,
     private readonly interaction: Discord.ButtonInteraction
   ) {
     super()
   }
 
-  public static async initialInteraction(e: ModuleExecutionStart, interaction: Discord.ButtonInteraction|Discord.CommandInteraction, bot: Bot): Promise<void> {
+  public static async initialInteraction (e: ModuleExecutionStart, interaction: Discord.ButtonInteraction|Discord.CommandInteraction, bot: Bot): Promise<void> {
     await interaction.editReply(ModuleExecutionRenderer.initialMessage(e, bot) as Discord.WebhookEditMessageOptions)
   }
 
@@ -156,7 +156,7 @@ class ModuleExecutionRenderer extends ExecutionVisitor<Promise<void>> {
     await this.interaction.update(ModuleExecutionRenderer.initialMessage(e, this.bot))
   }
 
-  private static initialMessage(e: ModuleExecutionStart, bot: Bot): Discord.InteractionUpdateOptions {
+  private static initialMessage (e: ModuleExecutionStart, bot: Bot): Discord.InteractionUpdateOptions {
     const row = new MessageActionRow()
       .addComponents(
         new Discord.MessageButton()
@@ -170,22 +170,20 @@ class ModuleExecutionRenderer extends ExecutionVisitor<Promise<void>> {
         '',
         e.module.description,
         '',
-        e.module.videoUri !== "" ? `Before starting you should check out ${e.module.videoUri}` : '',
+        e.module.videoUri !== '' ? `Before starting you should check out ${e.module.videoUri}` : '',
         '**How will this work?**',
         `After clicking next you will answer ${e.module.formativeQuestions.length} questions that should use to improve your knowledge: you can retry them until you answer right!`,
-        `Following those, you have the chance to go back to the beginning or start the evaluation.`,
+        'Following those, you have the chance to go back to the beginning or start the evaluation.',
         '**References**',
         `Find the references for this module at <${e.module.referencesLink}>`,
         ATTRIBUTION,
         '',
-        'See you on the other side!',
-      ].join('\n')
-
-    console.log('Content size is ' + content.length)
+        'See you on the other side!'
+    ].join('\n')
 
     return {
       content,
-      components: [row],
+      components: [row]
     }
   }
 
@@ -201,7 +199,7 @@ class ModuleExecutionRenderer extends ExecutionVisitor<Promise<void>> {
       this.buttonAnswer(e, idx, actionId as AnswerAction)
     ))
 
-    this.interaction.update({
+    await this.interaction.update({
       content: [
         `__**${e.module.name}**__`,
         `**Question ${e.questionNumber + 1}/${e.module.formativeQuestions.length}**`,
@@ -209,7 +207,7 @@ class ModuleExecutionRenderer extends ExecutionVisitor<Promise<void>> {
         '',
         ...options.map(([answer, _actionId], idx) => `${idx}. ${answer}`)
       ].join('\n'),
-      components,
+      components
     })
   }
 
@@ -218,28 +216,28 @@ class ModuleExecutionRenderer extends ExecutionVisitor<Promise<void>> {
     if (e.isRightAnswer()) {
       feedback = e.question().feedbackForCorrect ?? "That's right! Keep going!"
     } else {
-      feedback = e.question().feedbackForWrong ?? "Not quite. Try again!"
+      feedback = e.question().feedbackForWrong ?? 'Not quite. Try again!'
     }
-    
-    this.interaction.update({
+
+    await this.interaction.update({
       content: [
         `__**${e.module.name}**__`,
-        `**Question ${e.questionNumber +1 }/${e.module.formativeQuestions.length}**`,
-        feedback,
+        `**Question ${e.questionNumber + 1}/${e.module.formativeQuestions.length}**`,
+        feedback
       ].join('\n'),
       components: [
         new MessageActionRow()
           .addComponents(
             this.button(e, '_')
               .setStyle(MessageButtonStyles.PRIMARY)
-              .setLabel(e.isRightAnswer() ? "Next" : "Retry")
+              .setLabel(e.isRightAnswer() ? 'Next' : 'Retry')
           )
       ]
     })
   }
 
   public async visitEvaluationPre (e: ModuleExecutionEvaluationPre): Promise<void> {
-    this.interaction.update({
+    await this.interaction.update({
       content: [
         `__**${e.module.name}**__`,
         'Ok, let\'s stop for a second.',
@@ -254,7 +252,7 @@ class ModuleExecutionRenderer extends ExecutionVisitor<Promise<void>> {
           .setLabel("Let's go!"),
         this.button(e, EvaluationPreActions.Restart)
           .setStyle(MessageButtonStyles.SECONDARY)
-          .setLabel("I need to practice again...")
+          .setLabel('I need to practice again...')
       )]
     })
   }
@@ -271,7 +269,7 @@ class ModuleExecutionRenderer extends ExecutionVisitor<Promise<void>> {
       this.buttonAnswer(e, idx, actionId as AnswerAction)
     ))
 
-    this.interaction.update({
+    await this.interaction.update({
       content: [
         `__**${e.module.name}**__`,
         `**Question ${e.questionNumber + 1}/${e.module.evaluationQuestions.length}**`,
@@ -279,33 +277,33 @@ class ModuleExecutionRenderer extends ExecutionVisitor<Promise<void>> {
         '',
         ...options.map(([answer, _actionId], idx) => `${idx}. ${answer}`)
       ].join('\n'),
-      components,
+      components
     })
   }
 
   public async visitEnd (e: ModuleExecutionEnd): Promise<void> {
     const score = Math.round(e.score / e.module.evaluationQuestions.length * 100)
 
-    let score_comment
+    let scoreComment
     if (score > 80) {
-      score_comment = "Congrats!"
+      scoreComment = 'Congrats!'
     } else if (score > 50) {
-      score_comment = "I'm sure that with a bit of practice you can do even better!"
+      scoreComment = "I'm sure that with a bit of practice you can do even better!"
     } else {
-      score_comment = "I think you should study a bit more..."
+      scoreComment = 'I think you should study a bit more...'
     }
 
     let funFact = arrayShuffle(e.module.funFacts.slice(0))[0] ?? ''
-    if (funFact != '') {
+    if (funFact !== '') {
       funFact = `\nHere's a fun fact:\n${funFact}\n`
     }
 
-    this.interaction.update({
+    await this.interaction.update({
       content: [
         `__**${e.module.name}**__`,
-        `You scored ${score}% ${score_comment}`,
+        `You scored ${score}% ${scoreComment}`,
         funFact,
-        ATTRIBUTION,
+        ATTRIBUTION
       ].join('\n'),
       components: [new MessageActionRow().addComponents(
         this.button(e, EndAction.RestartEvaluation)
@@ -313,7 +311,7 @@ class ModuleExecutionRenderer extends ExecutionVisitor<Promise<void>> {
           .setLabel("I'll have another go"),
         this.button(e, EndAction.RestartModule)
           .setStyle(MessageButtonStyles.SECONDARY)
-          .setLabel("Restart Module (go back to the very beginning)")
+          .setLabel('Restart Module (go back to the very beginning)')
       )]
     })
   }
@@ -327,13 +325,13 @@ class ModuleExecutionRenderer extends ExecutionVisitor<Promise<void>> {
     ].join('\n'))
   }
 
-  private buttonAnswer(ex: ModuleExecution, answerIdx: number, actionId: AnswerAction): Discord.MessageButton {
+  private buttonAnswer (ex: ModuleExecution, answerIdx: number, actionId: AnswerAction): Discord.MessageButton {
     return this.button(ex, actionId)
       .setLabel(answerIdx.toString())
       .setStyle(MessageButtonStyles.PRIMARY)
   }
 
-  private button(ex: ModuleExecution, actionId: string): Discord.MessageButton {
+  private button (ex: ModuleExecution, actionId: string): Discord.MessageButton {
     return new Discord.MessageButton()
       .setCustomId(this.bot.createButtonId(ex, actionId, this.buttonId++))
   }
