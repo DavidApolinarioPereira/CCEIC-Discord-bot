@@ -5,9 +5,8 @@ description: |
 
   There are a few kinds of leading questions (Formplus Blog, 2021):
   - **Assumption-Based** - This type of Leading Question stems from an assumption from the interrogator. It is commonly applied to feedback surveys where the objective is to test a given assumption. An example of this could be: “How satisfied are you with our product?”, where the interrogator assumes that a given customer must have been satisfied up to a certain degree.
-  - **Direct Implication** - These question types often ask for the respondents opinion on something. Typically, these are focused on a future occurrence or event. An example could be “If you enjoyed the restaurant’s space, would you recommend it to your friends?”. It often implies the respondents directly and can make the respondents feel like a key part of a decision.
-  - **Coercive/Forceful** - This questioning type almost suggests a forceful answer, given its structure and makes the respondent feel inclined to answer in a certain manner. An example of this could be: “You enjoyed our services, didn't you?”, where the interrogator is expecting a positive answer to his question.
-
+  - **Direct Implication** - These question types often ask for the respondents opinion on something. Typically, these are focused on a future occurrence or event. An example could be “If you enjoyed the restaurant’s space, would you recommend it to your friends?”. It often implies the respondents directly and can makes them feel a key part of a decision.
+  - **Coercive/Forceful** - This questioning type almost suggests a forceful answer, given its structure and makes the respondent feel inclined to answer in a certain manner. An example of this could be: “You enjoyed our services, didn't you?”, where the interrogator is expecting a positive answer.
 formativeQuestions:
   - question: Please identify the type of this question - (For context, a policeman that has just witnessed a driver cut a STOP sign) "You didn’t see the stop sign, did you?".
     correctAnswers:

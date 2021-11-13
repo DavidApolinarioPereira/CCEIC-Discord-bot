@@ -9,7 +9,7 @@ import { REST } from '@discordjs/rest'
 import { Routes, RESTPostAPIApplicationCommandsJSONBody } from 'discord-api-types/v9'
 import arrayShuffle from 'array-shuffle'
 
-const ATTRIBUTION: string = 'Developed by: André Breda (ist189409), David Apolinário (ist198685), Miguel Marcelino (ist198684), Wilson Pereira (ist189561)',
+const ATTRIBUTION: string = '**Developers**\nAndré Breda (ist189409), David Apolinário (ist198685), Miguel Marcelino (ist198684), Wilson Pereira (ist189561)'
 
 export default class Bot {
   private readonly client: Discord.Client
@@ -165,8 +165,7 @@ class ModuleExecutionRenderer extends ExecutionVisitor<Promise<void>> {
           .setLabel('Next')
       )
 
-    return {
-      content: [
+    const content = [
         `__**${e.module.name}**__`,
         '',
         e.module.description,
@@ -177,10 +176,15 @@ class ModuleExecutionRenderer extends ExecutionVisitor<Promise<void>> {
         `Following those, you have the chance to go back to the beginning or start the evaluation.`,
         '**References**',
         `Find the references for this module at <${e.module.referencesLink}>`,
+        ATTRIBUTION,
         '',
         'See you on the other side!',
-        ATTRIBUTION,
-      ].join('\n'),
+      ].join('\n')
+
+    console.log('Content size is ' + content.length)
+
+    return {
+      content,
       components: [row],
     }
   }
@@ -199,7 +203,7 @@ class ModuleExecutionRenderer extends ExecutionVisitor<Promise<void>> {
 
     this.interaction.update({
       content: [
-        `**${e.module.name}**`,
+        `__**${e.module.name}**__`,
         `**Question ${e.questionNumber + 1}/${e.module.formativeQuestions.length}**`,
         question.question,
         '',
@@ -219,7 +223,7 @@ class ModuleExecutionRenderer extends ExecutionVisitor<Promise<void>> {
     
     this.interaction.update({
       content: [
-        `**${e.module.name}**`,
+        `__**${e.module.name}**__`,
         `**Question ${e.questionNumber +1 }/${e.module.formativeQuestions.length}**`,
         feedback,
       ].join('\n'),
@@ -237,7 +241,7 @@ class ModuleExecutionRenderer extends ExecutionVisitor<Promise<void>> {
   public async visitEvaluationPre (e: ModuleExecutionEvaluationPre): Promise<void> {
     this.interaction.update({
       content: [
-        `**${e.module.name}**`,
+        `__**${e.module.name}**__`,
         'Ok, let\'s stop for a second.',
         '',
         'When you click **Next**, you will start your **evaluation**.',
@@ -269,7 +273,7 @@ class ModuleExecutionRenderer extends ExecutionVisitor<Promise<void>> {
 
     this.interaction.update({
       content: [
-        `**${e.module.name}**`,
+        `__**${e.module.name}**__`,
         `**Question ${e.questionNumber + 1}/${e.module.evaluationQuestions.length}**`,
         question.question,
         '',
@@ -291,13 +295,16 @@ class ModuleExecutionRenderer extends ExecutionVisitor<Promise<void>> {
       score_comment = "I think you should study a bit more..."
     }
 
+    let funFact = arrayShuffle(e.module.funFacts.slice(0))[0] ?? ''
+    if (funFact != '') {
+      funFact = `\nHere's a fun fact:\n${funFact}\n`
+    }
+
     this.interaction.update({
       content: [
-        `**${e.module.name}**`,
+        `__**${e.module.name}**__`,
         `You scored ${score}% ${score_comment}`,
-        '',
-        arrayShuffle(e.module.funFacts.slice(0))[0] ?? '',
-        '',
+        funFact,
         ATTRIBUTION,
       ].join('\n'),
       components: [new MessageActionRow().addComponents(
@@ -313,7 +320,7 @@ class ModuleExecutionRenderer extends ExecutionVisitor<Promise<void>> {
 
   public async visitError (e: ModuleExecutionError): Promise<void> {
     await this.interaction.editReply([
-      `**${e.module?.name ?? 'Unknown module'}**`,
+      `__**${e.module?.name ?? 'Unknown module'}**__`,
       `Error: ${e.message}`,
       'Manually restart module.',
       'If your name is Sofia, Afonso or Roman please ignore :)'
