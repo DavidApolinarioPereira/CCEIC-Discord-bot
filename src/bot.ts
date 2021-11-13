@@ -9,6 +9,8 @@ import { REST } from '@discordjs/rest'
 import { Routes, RESTPostAPIApplicationCommandsJSONBody } from 'discord-api-types/v9'
 import arrayShuffle from 'array-shuffle'
 
+const ATTRIBUTTION: string = 'Developed by: André Breda (ist189409), David Apolinário (ist198685), Miguel Marcelino (ist198684), Wilson Pereira (ist189561)',
+
 export default class Bot {
   private readonly client: Discord.Client
   private readonly config: BotConfiguration
@@ -174,9 +176,10 @@ class ModuleExecutionRenderer extends ExecutionVisitor<Promise<void>> {
         `After clicking next you will answer ${e.module.formativeQuestions.length} questions that should use to improve your knowledge: you can retry them until you answer right!`,
         `Following those, you have the chance to go back to the beginning or start the evaluation.`,
         '**References**',
-        ...Object.entries(e.module.references).map(([name, link]) => `- ${name}: ${link}`),
+        `Find the references for this module at <${e.module.referencesLink}>`,
         '',
         'See you on the other side!',
+        ATTRIBUTION,
       ].join('\n'),
       components: [row],
     }
@@ -294,6 +297,8 @@ class ModuleExecutionRenderer extends ExecutionVisitor<Promise<void>> {
         `You scored ${score}% ${score_comment}`,
         '',
         arrayShuffle(e.module.funFacts.slice(0))[0] ?? '',
+        '',
+        ATTRIBUTION,
       ].join('\n'),
       components: [new MessageActionRow().addComponents(
         this.button(e, EndAction.RestartEvaluation)

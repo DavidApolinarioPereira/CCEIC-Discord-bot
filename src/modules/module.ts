@@ -11,7 +11,7 @@ export class Module {
     public readonly formativeQuestions: Question[],
     public readonly evaluationQuestions: Question[],
     public readonly funFacts: string[],
-    public readonly references: { [name: string]: string },
+    public readonly referencesLink: string,
   ) { }
 
   /**

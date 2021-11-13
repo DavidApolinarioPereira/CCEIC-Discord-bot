@@ -34,8 +34,7 @@ evaluationQuestions:
       - Coercive Leading Question
     feedbackForCorrect: Well done! This particular question is referring to a future event, and it focuses on the receiver's opinion.
     feedbackForWrong: The correct answer is Assumption-based Leading Question. This particular question is referring to a future event, and it focuses on the receiver's opinion.
-references:
-  Find the references for this module at: "https://docs.google.com/document/d/1e44ey5J2ASQOrHIXp5F7blnU6Lqx132j-jjESOT7hkM/edit?usp=sharing"
+referencesLink: "https://docs.google.com/document/d/1e44ey5J2ASQOrHIXp5F7blnU6Lqx132j-jjESOT7hkM/edit?usp=sharing"
 funFacts:
   - Leading questions are mainly used by attorneys during trial (Melinkoff, UCLA)
   - “Witness’s attorney, during direct examination, generally may not ask leading questions because then the attorney would be suggesting to the witness what the answer should be”. (Melinkoff, UCLA)

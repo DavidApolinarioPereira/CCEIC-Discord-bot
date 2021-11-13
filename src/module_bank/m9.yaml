@@ -36,7 +36,6 @@ evaluationQuestions:
       - Continue to ask open questions
     feedbackForCorrect: Correct, this is a great course of action. After having the interviewee in a relaxed setting, asking for some follow-up will generate much more useful information.
     feedbackForWrong: Doing this, while useful at times, will limit the information one can gather from the interviewee, and broaden the scope of the conversation.
-references:
-  Find the references for this module at: "https://docs.google.com/document/d/1e44ey5J2ASQOrHIXp5F7blnU6Lqx132j-jjESOT7hkM/edit?usp=sharing"
+referencesLink: "https://docs.google.com/document/d/1e44ey5J2ASQOrHIXp5F7blnU6Lqx132j-jjESOT7hkM/edit?usp=sharing"
 funFacts: 
   - Did you know that Funnel Questioning is used by detectives to help the interviewees recall what may have happened?

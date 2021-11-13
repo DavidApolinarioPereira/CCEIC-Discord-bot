@@ -1,8 +1,8 @@
 name: "[LG 5] Defining and identifying Closed Questions"
 videoUri: "https://www.youtube.com/watch?v=GXIH97CzXOA"
 description: |
-  “Close-ended questions are question formats that provoke a simple response from a respondent. They are designed such there (sic) isn’t much thought into the single word answer”. (Formplus Blog, 2021a)
-  “Individuals generally enjoy talking about themselves. If you give then an opportunity, you'll be surprised how much information they'll disclose to you. However, close-ended questions seek the exact opposite. Rather than seek to hear all they have to say, these questions target specifics.” (Formplus Blog, 2021a)
+  “Close-ended questions are question formats that provoke a simple response from a respondent. They are designed such there (sic) isn’t much thought into the single word answer”. (Formplus Blog, 2021)
+  “Individuals generally enjoy talking about themselves. If you give then an opportunity, you'll be surprised how much information they'll disclose to you. However, close-ended questions seek the exact opposite. Rather than seek to hear all they have to say, these questions target specifics.” (Formplus Blog, 2021)
   
   When to use closed questions (Question pro, 2019):
   - To obtain specific insight. Contrary to Open Ended Questions, Closed questions make it easier to compare responses.
@@ -19,15 +19,23 @@ formativeQuestions:
     feedbackForCorrect: Correct! Closed questions provoke simple responses.
     feedbackForWrong: You might be confusing closed questions with open questions. Use open-ended question when you want to develop a better understanding of your customers and their needs (Question pro, 2019).
 evaluationQuestions:
-  - question: Let's do it again! Please identify the Closed Questions.
+  - question: Please identify the Closed Questions.
     correctAnswers:
       - Are you good at fixing bugs in your code?
-      - Have you seen the new Macbook?
+      - Have you seen the new Macbooks?
     wrongAnswers:
       - Where do enjoy working the most?
       - What is your dream travel destination?
     feedbackForCorrect: Correct! Closed questions provoke simple responses.
     feedbackForWrong: You might be confusing closed questions with open questions. Use open-ended question when you want to develop a better understanding of your customers and their needs (Question pro, 2019).
-references:
-  Find the references for this module at: "https://docs.google.com/document/d/1e44ey5J2ASQOrHIXp5F7blnU6Lqx132j-jjESOT7hkM/edit?usp=sharing"
+  - question: Please identify the Closed Questions.
+    correctAnswers:
+      - Can you get me some coffee?
+      - Have you enjoyed the Apple announcement event?
+    wrongAnswers:
+      - Where would you like to live in 10 years?
+      - What is your favorite time of the day?
+    feedbackForCorrect: Correct! Closed questions provoke simple responses.
+    feedbackForWrong: You might be confusing closed questions with open questions. Use open-ended question when you want to develop a better understanding of your customers and their needs (Question pro, 2019).
+referencesLink: "https://docs.google.com/document/d/1e44ey5J2ASQOrHIXp5F7blnU6Lqx132j-jjESOT7hkM/edit?usp=sharing"
 funFacts: []

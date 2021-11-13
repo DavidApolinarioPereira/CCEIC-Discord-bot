@@ -39,6 +39,5 @@ evaluationQuestions:
         - Continue to ask open questions, e.g. 'Which color palette were you thinking of?'.
       feedbackForCorrect: This is a great course of action. After understanding the general requirements trying to get more specific information from the stakeholders.
       feedbackForWrong: Doing this, while useful at times, will limit the information one can gather from the stakeholder.
-references:
-  Find the references for this module at: "https://docs.google.com/document/d/1e44ey5J2ASQOrHIXp5F7blnU6Lqx132j-jjESOT7hkM/edit?usp=sharing"
+referencesLink: "https://docs.google.com/document/d/1e44ey5J2ASQOrHIXp5F7blnU6Lqx132j-jjESOT7hkM/edit?usp=sharing"
 funFacts: []

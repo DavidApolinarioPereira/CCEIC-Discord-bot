@@ -51,6 +51,5 @@ evaluationQuestions:
       - Open Question
     feedbackForCorrect: Well done! This particular question is a Leading Question. It is created in such a way, that the responder is almost forced into a pre-determined answer.
     feedbackForWrong: The correct answer is Leading Question. It is created in such a way, that the responder is almost forced into a pre-determined answer.
-references:
-  Find the references for this module at: "https://docs.google.com/document/d/1e44ey5J2ASQOrHIXp5F7blnU6Lqx132j-jjESOT7hkM/edit?usp=sharing"
+referencesLink: "https://docs.google.com/document/d/1e44ey5J2ASQOrHIXp5F7blnU6Lqx132j-jjESOT7hkM/edit?usp=sharing"
 funFacts: []
