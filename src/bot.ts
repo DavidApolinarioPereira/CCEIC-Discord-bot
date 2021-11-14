@@ -37,8 +37,6 @@ export default class Bot {
   }
 
   async registerCommands (): Promise<void> {
-    const clientId = '907322243586089034'
-    const guildId = '893092430935646209'
     const commands: RESTPostAPIApplicationCommandsJSONBody[] = []
 
     commands.push(
@@ -62,7 +60,7 @@ export default class Bot {
       console.log(Routes)
 
       await rest.put(
-        Routes.applicationGuildCommands(clientId, guildId),
+        Routes.applicationGuildCommands(this.config.clientId, this.config.guildId),
         { body: commands }
       )
 
