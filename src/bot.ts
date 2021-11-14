@@ -301,6 +301,8 @@ class ModuleExecutionRenderer extends ExecutionVisitor<Promise<void>> {
         `__**${e.module.name}**__`,
         `You scored ${score}% ${scoreComment}`,
         funFact,
+        '**References**',
+        `Find the references for this module at <${e.module.referencesLink}>`,
         ATTRIBUTION
       ].join('\n'),
       components: [new MessageActionRow().addComponents(
