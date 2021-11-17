@@ -2,7 +2,7 @@ name: "[LG 4] Define, identify and use Open Questions"
 videoUri: "https://www.youtube.com/watch?v=_gjeTDH4XjU"
 description: |
   “An open ended question is designed to encourage a full, meaningful, and deliberate answer using the subject's own knowledge and/or feelings.”  (Formplus Blog, 2021)
-  Use cases
+  Use cases (Formplus Blog, 2021b)
   - Asking details;
   - Assessing deep knowledge of a subject;
   - Assess communication skills;
@@ -23,10 +23,10 @@ formativeQuestions:
 evaluationQuestions:
   - question: Identify one Open question! (More than one answer is correct)
     correctAnswers:
-      - How do you feel about our customer service
+      - How do you feel about our customer service?
       - What were the main reasons you chose our product?
     wrongAnswers:
-      - Did you experience good customer service
+      - Did you experience good customer service?
       - Would you recomend our product?
     feedbackForCorrect: That is correct! Open questions allow us to develop a better understanding of your customers and their needs, as demonstrated here.
     feedbackForWrong: That was unfortunately not an Open ended Question. "Open-ended question are used when you want to develop a better understanding of your customers and their needs" (Dossetto, 2019). Feel free to try again!
