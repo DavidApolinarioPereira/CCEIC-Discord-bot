@@ -3,7 +3,7 @@ import Discord, { CommandInteraction, MessageActionRow } from 'discord.js'
 import { MessageButtonStyles } from 'discord.js/typings/enums'
 import BotConfiguration from './config.js'
 import { ModuleExecution, ModuleRegistry } from './modules/index.js'
-import { AnswerAction, EndAction, EvaluationPreActions, ModuleExecutionEnd, ModuleExecutionError, ModuleExecutionEvaluation, ModuleExecutionEvaluationPre, ModuleExecutionFormative, ModuleExecutionFormativeFeedback, ModuleExecutionStart } from './modules/execution.js'
+import { AnswerAction, EndAction, EvaluationPreActions, ModuleExecutionEnd, ModuleExecutionError, ModuleExecutionEvaluation, ModuleExecutionEvaluationPre, ModuleExecutionStart } from './modules/execution.js'
 import { ExecutionVisitor } from './modules/executionvisitor.js'
 import { REST } from '@discordjs/rest'
 import { Routes, RESTPostAPIApplicationCommandsJSONBody } from 'discord-api-types/v9'
@@ -16,7 +16,7 @@ export default class Bot {
   private readonly config: BotConfiguration
   private readonly modules: ModuleRegistry
 
-  constructor (config: BotConfiguration) {
+  constructor(config: BotConfiguration) {
     this.client = new Discord.Client({
       intents: [
         Discord.Intents.FLAGS.GUILDS,
@@ -31,12 +31,12 @@ export default class Bot {
     this.modules = ModuleRegistry.fromDirectory(config.modulesPath)
   }
 
-  async readyHandler (): Promise<void> {
+  async readyHandler(): Promise<void> {
     console.log('Bot up!')
     await this.registerCommands()
   }
 
-  async registerCommands (): Promise<void> {
+  async registerCommands(): Promise<void> {
     const commands: RESTPostAPIApplicationCommandsJSONBody[] = []
 
     commands.push(
@@ -70,7 +70,7 @@ export default class Bot {
     }
   }
 
-  async interactionCreateHandler (interaction: Discord.Interaction): Promise<void> {
+  async interactionCreateHandler(interaction: Discord.Interaction): Promise<void> {
     switch (interaction.type) {
       case 'APPLICATION_COMMAND':
         {
@@ -100,7 +100,7 @@ export default class Bot {
     }
   }
 
-  async handleButtonInteraction (interaction: Discord.ButtonInteraction): Promise<void> {
+  async handleButtonInteraction(interaction: Discord.ButtonInteraction): Promise<void> {
     let [state, actionId] = this.parseButtonId(interaction.customId)
     console.log('state at button press:')
     console.log(state)
@@ -112,18 +112,18 @@ export default class Bot {
     await state.accept(renderer)
   }
 
-  private parseButtonId (customId: string): [ModuleExecution, string] {
+  private parseButtonId(customId: string): [ModuleExecution, string] {
     const [actionId, serializedState, _buttonId] = customId.split('-', 3)
 
     return [ModuleExecution.deserialize(serializedState, this.modules), actionId]
   }
 
-  createButtonId (state: ModuleExecution, actionId: string, buttonId: number): string {
+  createButtonId(state: ModuleExecution, actionId: string, buttonId: number): string {
     const serializedState = state.serialize()
     return `${actionId}-${serializedState}-${buttonId}`
   }
 
-  async startModule (interaction: CommandInteraction): Promise<void> {
+  async startModule(interaction: CommandInteraction): Promise<void> {
     const moduleName = interaction.options.getString('module', true)
     const module = this.modules.get(moduleName)
     const execution = ModuleExecution.newForModule(module)
@@ -131,7 +131,7 @@ export default class Bot {
     await ModuleExecutionRenderer.initialInteraction(execution, interaction, this)
   }
 
-  async start (): Promise<void> {
+  async start(): Promise<void> {
     await this.client.login(this.config.discordToken)
   }
 }
@@ -139,22 +139,22 @@ export default class Bot {
 class ModuleExecutionRenderer extends ExecutionVisitor<Promise<void>> {
   private buttonId = 0
 
-  constructor (
+  constructor(
     private readonly bot: Bot,
     private readonly interaction: Discord.ButtonInteraction
   ) {
     super()
   }
 
-  public static async initialInteraction (e: ModuleExecutionStart, interaction: Discord.ButtonInteraction|Discord.CommandInteraction, bot: Bot): Promise<void> {
+  public static async initialInteraction(e: ModuleExecutionStart, interaction: Discord.ButtonInteraction | Discord.CommandInteraction, bot: Bot): Promise<void> {
     await interaction.editReply(ModuleExecutionRenderer.initialMessage(e, bot) as Discord.WebhookEditMessageOptions)
   }
 
-  public async visitStart (e: ModuleExecutionStart): Promise<void> {
+  public async visitStart(e: ModuleExecutionStart): Promise<void> {
     await this.interaction.update(ModuleExecutionRenderer.initialMessage(e, this.bot))
   }
 
-  private static initialMessage (e: ModuleExecutionStart, bot: Bot): Discord.InteractionUpdateOptions {
+  private static initialMessage(e: ModuleExecutionStart, bot: Bot): Discord.InteractionUpdateOptions {
     const row = new MessageActionRow()
       .addComponents(
         new Discord.MessageButton()
@@ -164,19 +164,19 @@ class ModuleExecutionRenderer extends ExecutionVisitor<Promise<void>> {
       )
 
     const content = [
-        `__**${e.module.name}**__`,
-        '',
-        e.module.description,
-        '',
-        e.module.videoUri !== '' ? `Before starting you should check out ${e.module.videoUri}` : '',
-        '**How will this work?**',
-        `After clicking next you will answer ${e.module.formativeQuestions.length} questions that should use to improve your knowledge: you can retry them until you answer right!`,
-        'Following those, you have the chance to go back to the beginning or start the evaluation.',
-        '**References**',
-        `Find the references for this module at <${e.module.referencesLink}>`,
-        ATTRIBUTION,
-        '',
-        'See you on the other side!'
+      `__**${e.module.name}**__`,
+      '',
+      e.module.description,
+      '',
+      e.module.videoUri !== '' ? `Before starting you should check out ${e.module.videoUri}` : '',
+      '**How will this work?**',
+      `After clicking next you will answer ${e.module.evaluationQuestions.length} questions that should use to assess your knowledge.`,
+      'Following those, you have the chance to go back to the beginning or restart the evaluation.',
+      '**References**',
+      `Find the references for this module at <${e.module.referencesLink}>`,
+      ATTRIBUTION,
+      '',
+      'See you on the other side!'
     ].join('\n')
 
     return {
@@ -185,56 +185,7 @@ class ModuleExecutionRenderer extends ExecutionVisitor<Promise<void>> {
     }
   }
 
-  public async visitFormative (e: ModuleExecutionFormative): Promise<void> {
-    const question = e.question()
-
-    const options = arrayShuffle(
-      question.correctAnswers.map(ans => [ans, AnswerAction.Correct])
-        .concat(question.wrongAnswers.map(ans => [ans, AnswerAction.Incorrect]))
-    )
-
-    const components = options.map(([answer, actionId], idx) => new MessageActionRow().addComponents(
-      this.buttonAnswer(e, idx, actionId as AnswerAction)
-    ))
-
-    await this.interaction.update({
-      content: [
-        `__**${e.module.name}**__`,
-        `**Question ${e.questionNumber + 1}/${e.module.formativeQuestions.length}**`,
-        question.question,
-        '',
-        ...options.map(([answer, _actionId], idx) => `${idx}. ${answer}`)
-      ].join('\n'),
-      components
-    })
-  }
-
-  public async visitFormativeFeedback (e: ModuleExecutionFormativeFeedback): Promise<void> {
-    let feedback: string
-    if (e.isRightAnswer()) {
-      feedback = e.question().feedbackForCorrect ?? "That's right! Keep going!"
-    } else {
-      feedback = e.question().feedbackForWrong ?? 'Not quite. Try again!'
-    }
-
-    await this.interaction.update({
-      content: [
-        `__**${e.module.name}**__`,
-        `**Question ${e.questionNumber + 1}/${e.module.formativeQuestions.length}**`,
-        feedback
-      ].join('\n'),
-      components: [
-        new MessageActionRow()
-          .addComponents(
-            this.button(e, '_')
-              .setStyle(MessageButtonStyles.PRIMARY)
-              .setLabel(e.isRightAnswer() ? 'Next' : 'Retry')
-          )
-      ]
-    })
-  }
-
-  public async visitEvaluationPre (e: ModuleExecutionEvaluationPre): Promise<void> {
+  public async visitEvaluationPre(e: ModuleExecutionEvaluationPre): Promise<void> {
     await this.interaction.update({
       content: [
         `__**${e.module.name}**__`,
@@ -255,7 +206,7 @@ class ModuleExecutionRenderer extends ExecutionVisitor<Promise<void>> {
     })
   }
 
-  public async visitEvaluation (e: ModuleExecutionEvaluation): Promise<void> {
+  public async visitEvaluation(e: ModuleExecutionEvaluation): Promise<void> {
     const question = e.question()
 
     const options = arrayShuffle(
@@ -279,7 +230,7 @@ class ModuleExecutionRenderer extends ExecutionVisitor<Promise<void>> {
     })
   }
 
-  public async visitEnd (e: ModuleExecutionEnd): Promise<void> {
+  public async visitEnd(e: ModuleExecutionEnd): Promise<void> {
     const score = Math.round(e.score / e.module.evaluationQuestions.length * 100)
 
     let scoreComment
@@ -316,22 +267,22 @@ class ModuleExecutionRenderer extends ExecutionVisitor<Promise<void>> {
     })
   }
 
-  public async visitError (e: ModuleExecutionError): Promise<void> {
+  public async visitError(e: ModuleExecutionError): Promise<void> {
     await this.interaction.editReply([
       `__**${e.module?.name ?? 'Unknown module'}**__`,
       `Error: ${e.message}`,
       'Manually restart module.',
-      'If your name is Sofia, Afonso or Roman please ignore :)'
+      'If your name is Sofia, Andreia or Patrícia please ignore :)'
     ].join('\n'))
   }
 
-  private buttonAnswer (ex: ModuleExecution, answerIdx: number, actionId: AnswerAction): Discord.MessageButton {
+  private buttonAnswer(ex: ModuleExecution, answerIdx: number, actionId: AnswerAction): Discord.MessageButton {
     return this.button(ex, actionId)
       .setLabel(answerIdx.toString())
       .setStyle(MessageButtonStyles.PRIMARY)
   }
 
-  private button (ex: ModuleExecution, actionId: string): Discord.MessageButton {
+  private button(ex: ModuleExecution, actionId: string): Discord.MessageButton {
     return new Discord.MessageButton()
       .setCustomId(this.bot.createButtonId(ex, actionId, this.buttonId++))
   }

@@ -8,7 +8,6 @@ export class Module {
     public readonly name: string,
     public readonly description: string,
     public readonly videoUri: string,
-    public readonly formativeQuestions: Question[],
     public readonly evaluationQuestions: Question[],
     public readonly funFacts: string[],
     public readonly referencesLink: string
