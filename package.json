@@ -8,21 +8,21 @@
 		"npm": ">=8.0.0"
 	},
 	"dependencies": {
-		"@discordjs/builders": "^0.6.0",
-		"@discordjs/rest": "^0.1.0-canary.0",
-		"@foxglove/cdr": "^1.2.0",
+		"@discordjs/builders": "^0.13.0",
+		"@discordjs/rest": "^0.4.1",
+		"@foxglove/cdr": "^2.0.0",
 		"array-shuffle": "^3.0.0",
-		"discord-api-types": "^0.22.0",
-		"discord.js": "^13.0.1",
-		"dotenv": "^10.0.0",
+		"discord-api-types": "^0.31.2",
+		"discord.js": "^13.6.0",
+		"dotenv": "^16.0.0",
 		"random-seedable": "^1.0.8",
-		"yaml": "2.0.0-8"
+		"yaml": "^2.0.1"
 	},
 	"devDependencies": {
-		"@tsconfig/node14": "^1.0.1",
+		"@tsconfig/node16": "^1.0.2",
 		"@types/node": "^16.11.7",
-		"ts-standard": "^10.0.0",
-		"typescript": "^4.4.4"
+		"ts-standard": "^11.0.0",
+		"typescript": "^4.6.3"
 	},
 	"scripts": {
 		"_build": "tsc && sed -i 's/const random_seedable_1 = require(\"random-seedable\");/const random_seedable_1 = import(\"random-seedable\");/' dist/modules/execution.js && sed -i 's|const array_shuffle_1 = __importDefault(require(\"array-shuffle\"));|const array_shuffle_1 = __importDefault(import(\"array-shuffle\"));|' dist/bot.js",

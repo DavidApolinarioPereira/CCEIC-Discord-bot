@@ -6,7 +6,7 @@ import { ModuleExecution, ModuleRegistry } from './modules/index.js'
 import { AnswerAction, EndAction, EvaluationPreActions, ModuleExecutionEnd, ModuleExecutionError, ModuleExecutionEvaluation, ModuleExecutionEvaluationPre, ModuleExecutionStart } from './modules/execution.js'
 import { ExecutionVisitor } from './modules/executionvisitor.js'
 import { REST } from '@discordjs/rest'
-import { Routes, RESTPostAPIApplicationCommandsJSONBody } from 'discord-api-types/v9'
+import { Routes, RESTPostAPIApplicationCommandsJSONBody, APIApplicationCommandOptionChoice } from 'discord-api-types/v10'
 import arrayShuffle from 'array-shuffle'
 
 const ATTRIBUTION: string = '**Developers**\nAndré Breda (ist189409), David Apolinário (ist198685), Miguel Marcelino (ist198684), Wilson Pereira (ist189561)'
@@ -47,7 +47,7 @@ export default class Bot {
           option
             .setName('module')
             .setDescription('module name')
-            .addChoices(this.modules.entries().map(([key, mod]) => [mod.name, key]))
+            .addChoices(...this.modules.entries().map(([key, mod]) => ({name: mod.name, value: key})))
             .setRequired(true)
         )
         .setDefaultPermission(true)
