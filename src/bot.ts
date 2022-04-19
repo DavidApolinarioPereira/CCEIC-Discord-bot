@@ -201,7 +201,7 @@ class ModuleExecutionRenderer extends ExecutionVisitor<Promise<void>> {
           .setLabel("Let's go!"),
         this.button(e, EvaluationPreActions.Restart)
           .setStyle(MessageButtonStyles.SECONDARY)
-          .setLabel('I need to practice again...')
+          .setLabel('I need to read the materials again...')
       )]
     })
   }
