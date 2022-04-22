@@ -4,7 +4,7 @@ description: |
   Internal communication is increasingly relevant for organizations, as it improves employee inclusion and contributes to the overall success of the enterprise (FitzPatrick et al., 2017).
   Internal communications can help a company address structural problem areas and promote a culture of trust and openness. It should be regarded as an organizational strategy rather than the duty of a single person (Johnson, 2022).
   A good internal communicator should strive to be open and accurate, while passing clear messages that all employees can understand, avoiding the creation of communication hurdles. It is not as easy job, but a vital one to provide transparency within the company (Green, 2020).
-evaluationQuestions:  
+evaluationQuestions:
   - question: Define internal communication (More than one answer is correct)
     correctAnswers:
       - Internal Communication is a collaborative effort between the members of the team.
@@ -13,17 +13,15 @@ evaluationQuestions:
       - Internal Communication is the responsibility of a single person in a company.
       - None are correct.
     feedbackForCorrect: Well done! Internal Communication is all about creating meaningful interaction and collaboration among people.
-    feedbackForWrong: Well done! Internal Communication is all about creating meaningful interaction and collaboration among people.
+    feedbackForWrong: Don’t worry! You’ll get it next time! Internal Communication is not the responsibility of a single person, it requires effort from everyone. It is all about creating meaningful interaction and collaboration among people.
   - question: Which of these statements is correct?
     correctAnswers:
-      - Internal communication is important for all companies, as it improves the success of the enterprise.
+      - Internal communication is important for all companies, as it improves their success.
     wrongAnswers:
       - The relevance of internal communication depends on the company and context where it is applied.
       - Internal communication is more important for leadership positions.
       - Internal communication should strive to achieve communication transparency, but only when it is appropriate.
     feedbackForCorrect: Well done! Internal Communication will promote a culture of trust and openness, and help breaking communication barriers.
-    feedbackForWrong: Don't worry! You'll get it next time! Internal Communication is relevant in every context and in every situation, and it is important in every level of the hierarchy. It will also promote a culture of trust and openness, and help breaking communication barriers.
-
-
-referencesLink: "PLACEHOLDER"
+    feedbackForWrong: Don't worry! You'll get it next time! Internal Communication is relevant in every context and in every situation, and it is important in every level of the hierarchy. It encourages a culture of transparency and trust, and helps break communication barriers.
+referencesLink: "https://docs.google.com/document/d/1iZHTfm4wm7iG-_L7jpk6_SIjsHsiK9MtV-maZt9P0wA/"
 funFacts: []

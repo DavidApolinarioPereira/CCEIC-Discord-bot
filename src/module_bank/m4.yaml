@@ -1,7 +1,7 @@
 name: "[LG 7] Characterize 3 means/tools of internal communication"
 videoUri: "https://www.youtube.com/watch?v=ioEpTO6w35M"
 description: |
-  There are many communication tools on the market these days it is hard to pick one. “The difficulty is in finding the ones that are more than just tools for tools sake, and then using them in a way that solves real employee problems” (Screencloud, 2022). Here, we list three tools one can use for Internal Communication.
+  There are many communication tools on the market these days it is hard to pick one. "The difficulty is in finding the ones that are more than just tools for tools sake, and then using them in a way that solves real employee problems" (Screencloud, 2022). Here, we list three tools (plus a bonus) one can use for Internal Communication.
   1. Using a forum for communication and discussion inside a company can help with the sharing of ideas. Although communication in forums can be more informal, it can help when ideas need to be discussed with more than one colleague (Screencloud, 2022).
   2. Instant messaging tools: Instant messaging tools can be a quick way to communicate with colleagues within the company. It is not as good for discussions with big groups as a forum, but can help if we quickly need a response from someone, such as a Team Leader (Duncan, 2022).
   3. Video Chat: Video chatting tools can be useful for longer discussions, as it helps with the visual communication of ideas (Duncan, 2022).
@@ -24,8 +24,8 @@ evaluationQuestions:
       - Forum
       - Instant Messaging
       - Email
-    feedbackForCorrect: Well done! Indeed, the best way to communicate and discuss with several people is via a (video) meeting. There is space for everyone to join the debate and for the point to be thoughtfully communicated.
+    feedbackForCorrect: Well done! The best way to communicate and discuss with several people is via a (video) meeting. There is space for everyone to join the debate and for the point to be thoughtfully communicated.
     feedbackForWrong: Don’t worry! You’ll get it next time! Notice that we want to discuss with several employees. Therefore, the ideal tool to use is a Zoom meeting to easily gather and communicate what is needed.
-referencesLink: "PLACEHOLDER"
+referencesLink: "https://docs.google.com/document/d/1iZHTfm4wm7iG-_L7jpk6_SIjsHsiK9MtV-maZt9P0wA/"
 funFacts:
-  - "You are awesome! :D"
+  ["You are awesome! :D"]

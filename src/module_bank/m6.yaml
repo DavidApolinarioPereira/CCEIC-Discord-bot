@@ -1,7 +1,7 @@
-name: "[LG 6] List 3 good practices of communication in instant messaging"
-videoUri: "https://www.youtube.com/watch?v=nhxT8MsRGoY&ab_channel=KetchumPR"
+name: "[LG 11] List 3 good practices of communication in instant messaging"
+videoUri: ""
 description: |
-  A particular case of communication is communication in instant messaging. Here, we list 3 good practices of internal communication in instant messaging:
+  A particular case of communication is instant messaging. Here, we list 3 good practices of internal communication in instant messaging:
   - Start with a short greeting: "When starting a conversation with someone over IM, you should always say "hi" or "hello" and then check to make sure it's a good time for them to chat." (Giang, 2013)
   - Don’t ask to ask: In group messages it’s better to include your question. “Someone who is idling on the channel and only every now and then glances what's going on is unlikely to answer to your "asking to ask" question, but your actual problem description may pique their interest and get them to answer.” (Asokan, n.d.). That said, it’s always good to follow the preference of the receiver. “You should adjust your style of communication to meet the other person’s, whether they are colleagues, bosses, customers, or clients.” (Giang, 2013)
   - Focus on one topic: IM is used for quick, laser-focused, correspondence, not long conversations. (12 Tips for Instant Messaging in the Workplace, 2014) If you need to discuss a broad topic, or want to chit-chat, it’s better to schedule a meeting or drop by in person.
@@ -21,7 +21,7 @@ formativeQuestions:
       - Meeting
     wrongAnswers:
       - Instant Messaging
-    feedbackForCorrect: That works! using a method that allows you to properly describe the context is optimal.
+    feedbackForCorrect: That is correct! using a method that allows you to properly describe the context is optimal.
     feedbackForWrong: Don't worry, you'll get it next time. Just understand that instant messaging is more appropriate for short and to the point conversations, and therefore not great for the lengthy process of requirements gathering. You can try again. I'm sure you will get it right :)
-referencesLink: ""
+referencesLink: "https://docs.google.com/document/d/1iZHTfm4wm7iG-_L7jpk6_SIjsHsiK9MtV-maZt9P0wA/"
 funFacts: []

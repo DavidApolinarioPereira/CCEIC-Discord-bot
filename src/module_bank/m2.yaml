@@ -6,14 +6,14 @@ description: |
     - Companies may also experience a decrease in security threats when applying Internal Communication. For example, improving the communication channels regarding security briefings, will result in more security-aware employees, more likely to follow and apply the IT policies of the enterprise (Brown, 2021).
     - "Without proper identification and continuous adaptation, you'll be trying to hit a moving target while blindfolded" (Crombach, 2018). Using good internal communication practices, the organization can ensure that its workers are all working towards a collective goal.
 evaluationQuestions:
-  - question: "Which of the following sentences is Incorrect?:"
+  - question: "Which of the following sentences is incorrect?:"
     correctAnswers:
       - The use of Internal Communication may compromise the enterprise in terms of security, due to the high volume of messages being exchanged.
     wrongAnswers:
       - Internal Communication will lead to a more positive working environment within the organization. 
       - Internal Communication can contribute to a higher employee retention rate, and improve the company value.
-    feedbackForCorrect: This sentence is correct. Internal Communication will lead to a more positive working environment and a higher employee retention rate. The incorrect sentence is c). Using Internal Communication, the organization’s employees will become more aware of security protocols, resulting in a more secure environment.
-    feedbackForWrong: Indeed, this sentence is incorrect. Using Internal Communication, the organization’s employees will become more aware of security protocols, resulting in a more secure environment.
+    feedbackForCorrect: Correct! Internal Communication will lead to a more positive working environment and a higher employee retention rate. 
+    feedbackForWrong: Indeed, this is incorrect. Using Internal Communication, the organization’s employees will become more aware of security protocols, resulting in a more secure environment.
   - question: Imagine that a certain tech company wants to deploy a set of Internal Communication practices. What benefits can the organization expect?
     correctAnswers:
       - The company can expect an increase in value and an improvement in teamwork amongst the employees. 
@@ -21,8 +21,8 @@ evaluationQuestions:
       - The company can expect an increase in employee turnover (the rate at which employees enter and exit the company will be higher).
       - The company can expect to become more vulnerable to security breaches. 
       - The company can expect to create a less positive working environment amongst the employees.
-    feedbackForCorrect: "This sentence is correct. Internal Communication will lead to a more positive working environment and a higher employee retention rate. The incorrect sentence is c). Using Internal Communication, the organization’s employees will become more aware of security protocols, resulting in a more secure environment."
-    feedbackForWrong: Correct! Using Internal Communication principles, one can expect to improve the overall working environment, and therefore, have motivated employees.
+    feedbackForCorrect: Correct! Using Internal Communication principles, one can expect to improve the overall working environment, and therefore, have motivated employees.
+    feedbackForWrong: No worries, you’ll get it next time! This is an effect of not using Internal Communication practices. Using them, one can expect to improve the value of the enterprise, security, and stability of the organization.
 
-referencesLink: "PLACEHOLDER"
+referencesLink: "https://docs.google.com/document/d/1iZHTfm4wm7iG-_L7jpk6_SIjsHsiK9MtV-maZt9P0wA/"
 funFacts: []
