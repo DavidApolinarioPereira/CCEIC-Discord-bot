@@ -1,40 +1,27 @@
-name: "[LG 6] Probing questions"
-videoUri: "https://www.youtube.com/watch?v=5P73EER3T7Y"
+name: "[LG 6] List 3 good practices of communication in instant messaging"
+videoUri: "https://www.youtube.com/watch?v=nhxT8MsRGoY&ab_channel=KetchumPR"
 description: |
-  Probing questions can be described as open questions “designed to deepen the knowledge and understanding of information for the person asking the question as well as the person answering” (Indeed Editorial Team, 2018)
-  Simply put, probing questions are intended to help the speaker think more deeply about the issue at hand. It can be as simple as asking the respondant for an example to help one understand something they have said (Mind Tools Content Team, 2009).    
-  Use cases
-  - Promoting critical thinking
-  - Ensuring you understand something
-  - Uncover secrets
-  - Facilitate brainstorming
+  A particular case of communication is communication in instant messaging. Here, we list 3 good practices of internal communication in instant messaging:
+  - Start with a short greeting: "When starting a conversation with someone over IM, you should always say "hi" or "hello" and then check to make sure it's a good time for them to chat." (Giang, 2013)
+  - Don’t ask to ask: In group messages it’s better to include your question. “Someone who is idling on the channel and only every now and then glances what's going on is unlikely to answer to your "asking to ask" question, but your actual problem description may pique their interest and get them to answer.” (Asokan, n.d.). That said, it’s always good to follow the preference of the receiver. “You should adjust your style of communication to meet the other person’s, whether they are colleagues, bosses, customers, or clients.” (Giang, 2013)
+  - Focus on one topic: IM is used for quick, laser-focused, correspondence, not long conversations. (12 Tips for Instant Messaging in the Workplace, 2014) If you need to discuss a broad topic, or want to chit-chat, it’s better to schedule a meeting or drop by in person.
 formativeQuestions:
-  - question: Please, identify the correct examples of probing questions. (More than 1 option is correct)
+  - question: How should I structure my message?
     correctAnswers:
-      - Is this what you said?
-      - Did I summarize what you said correctly?
+      - "Hey, do you have a minute? I need to discuss something with you."
+      - "Hi! If you’re not too busy, could you please help me with something I'm working on? Thanks for the help!"
     wrongAnswers:
-      - Did you understand what I said?
-      - Would you recommend our product to your colleagues?
-    feedbackForCorrect: Correct! Probing questions are typically brief and are designed to clarify the subject being discussed (Indeed Editorial Team, 2018).
-    feedbackForWrong: The question you selected is a Closed Ended Question. Probing questions are typically brief and are designed to clarify the subject being discussed (Indeed Editorial Team, 2018). Review your choices, you may try again.
-evaluationQuestions:
-  - question: Please, identify the correct examples of probing questions. (More than 1 option is correct)
+      - "I think your presentation was great!"
+      - "I noticed you’re online. Answer my riddle: (...)"
+    feedbackForCorrect: You nailed it! Just keep in mind that although most will understand that desire to be respectful of the other’s time, do keep in mind that there are a lot of people who would rather just receive your whole question right away before committing to answer it.
+    feedbackForWrong: Ooops! That’s nice, but you should probably greet the person first. Even if you are complimenting someone, start by saying hello. It goes a long way to improve your communication :).
+  - question: You need to gather requirements for the new project. How do you contact your client?
     correctAnswers:
-      - Why do you think that is?
-      - How did you come to this conclusion?
+      - Email
+      - Meeting
     wrongAnswers:
-      - Who is using Windows?
-    feedbackForCorrect: Correct! Probing questions are typically brief and are designed to clarify the subject being discussed (Indeed Editorial Team, 2018).
-    feedbackForWrong: The question you selected is a Closed Ended Question. Probing questions are typically brief and are designed to clarify the subject being discussed (Indeed Editorial Team, 2018). Review your choices, you may try again.
-  - question: Please, identify the correct examples of probing questions. (More than 1 option is correct)
-    correctAnswers: 
-      - What sort of impact do you think this will have?
-      - What would need to change in order for you to accomplish this?
-    wrongAnswers: 
-      - How can I help you in what you were looking for?
-      - Have you already completed the assignment I gave you?
-    feedbackForCorrect: Correct! Probing questions are typically brief and are designed to clarify the subject being discussed (Indeed Editorial Team, 2018).
-    feedbackForWrong: The question you selected is a Closed Ended Question. Probing questions are typically brief and are designed to clarify the subject being discussed (Indeed Editorial Team, 2018). Review your choices, you may try again.
-referencesLink: "https://docs.google.com/document/d/1e44ey5J2ASQOrHIXp5F7blnU6Lqx132j-jjESOT7hkM/edit?usp=sharing"
+      - Instant Messaging
+    feedbackForCorrect: That works! using a method that allows you to properly describe the context is optimal.
+    feedbackForWrong: Don't worry, you'll get it next time. Just understand that instant messaging is more appropriate for short and to the point conversations, and therefore not great for the lengthy process of requirements gathering. You can try again. I'm sure you will get it right :)
+referencesLink: ""
 funFacts: []

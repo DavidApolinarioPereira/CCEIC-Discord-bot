@@ -1,41 +1,33 @@
-name: "[LG 5] Defining and identifying Closed Questions"
-videoUri: "https://www.youtube.com/watch?v=GXIH97CzXOA"
+name: "[LG 9] List 3 good practices of communication in meetings"
+videoUri: ""
 description: |
-  “Close-ended questions are question formats that provoke a simple response from a respondent. They are designed such there (sic) isn’t much thought into the single word answer”. (Formplus Blog, 2021)
-  “Individuals generally enjoy talking about themselves. If you give then an opportunity, you'll be surprised how much information they'll disclose to you. However, close-ended questions seek the exact opposite. Rather than seek to hear all they have to say, these questions target specifics.” (Formplus Blog, 2021)
-  
-  When to use closed questions (Question pro, 2019):
-  - To obtain specific insight. Contrary to Open Ended Questions, Closed questions make it easier to compare responses.
-  - To restrict the response and reduce uncertainty.
-    
-formativeQuestions:
-  - question: "Identify the Closed questions:"
-    correctAnswers:
-      - Did you enjoy working with your team-mates?
-      - Would you work with this company again in the future?
-    wrongAnswers:
-      - What do you like about this project?
-      - How many hours of free time do you have on an average weekday?
-    feedbackForCorrect: Correct! Closed questions provoke simple responses.
-    feedbackForWrong: You might be confusing closed questions with open questions. Use open-ended question when you want to develop a better understanding of your customers and their needs (Question pro, 2019).
+  1. Body language
+    a. Body language is one of the most important aspects in meetings, helping us improve the impression we give to others. “First impressions are made in less than seven seconds and are heavily influenced by your body language”. Furthermore, “smiling is a positive signal that is underused by leaders. A smile is an invitation, a sign of welcome and inclusion. It says, “I’m friendly and approachable.”(Goman, 2018). 
+    b. Your Body language “provides clues to your attitude and state of mind” (Pantalone, 2013).
+    c. For instance (Pantalone, 2013)
+      i. “Are you using eye contact to include everyone?” 
+      ii. “Are your arms crossed defensively?”
+  2. Asking Questions
+    a. “While it may not always be possible or appropriate, meetings tend to work better when the attendees are involved in a conversation rather than simply listening to a long speech. However, some of those attending the meeting may be reluctant to interject or to volunteer points themselves, which is why questions are so important.” (Kan, 2021)
+  3. Word choice
+    a. “Your choice of words and language in a meeting can sometimes persuade opinions to go in your favor, or do the reverse. Be mindful when choosing your words and avoid language that makes assumptions or discriminates.” (Pantalone, 2013)
+    b. The way we end meetings is also important. Instead of ending the meeting just by thanking everyone, try to end on a positive note. For instance, complement the work of the team, so they leave motivated. Summarizing the contents of the meeting is also helpful to get everyone on the same page. Also, one can finish a meeting with a good question, for instance: “What was an unexpected win from last week?” (Dagher, 2021). This can also be a form of sharing information in a more interactive way.
 evaluationQuestions:
-  - question: Please identify the Closed Questions.
+  - question: Regarding Body language in a meeting, what would be characterized as good behavior when joining a meeting? (Consider that you arrive a little early before the meeting started).
     correctAnswers:
-      - Are you good at fixing bugs in your code?
-      - Have you seen the new Macbooks?
+      - Arriving with a smile and greeting the people that have already arrived.
     wrongAnswers:
-      - Where do enjoy working the most?
-      - What is your dream travel destination?
-    feedbackForCorrect: Correct! Closed questions provoke simple responses.
-    feedbackForWrong: You might be confusing closed questions with open questions. Use open-ended question when you want to develop a better understanding of your customers and their needs (Question pro, 2019).
-  - question: Please identify the Closed Questions.
+      - Arriving with your arms in a closed position.
+      - Arrive silently and sit down immediately.
+    feedbackForCorrect: Correct! The best way to join a meeting is by arriving in a positive state-of mind, as happiness spreads fast :). Smiling also helps a lot, although you should not force it. Also, greeting people shows that you are open to have a conversation and to discuss the topics.
+    feedbackForWrong: You’ll get it next time! When you arrive to a meeting, try to be more engaging, which is a sign of being open-minded. Arriving silently is only for when you are late, then making no noise is of absolute importance.
+  - question: Imagine that you are close to ending a meeting where you just handed out a lot of work to your employees. How would you end your meeting? (Remember what you learned on word choice :) ) (There is more than 1 correct answer).
     correctAnswers:
-      - Can you get me some coffee?
-      - Have you enjoyed the Apple announcement event?
+      - End by summarizing the meeting and wishing everyone luck for the upcoming week.
+      - Ask an interesting question at the end of the meeting to try to alleviate the mood.
     wrongAnswers:
-      - Where would you like to live in 10 years?
-      - What is your favorite time of the day?
-    feedbackForCorrect: Correct! Closed questions provoke simple responses.
-    feedbackForWrong: You might be confusing closed questions with open questions. Use open-ended question when you want to develop a better understanding of your customers and their needs (Question pro, 2019).
-referencesLink: "https://docs.google.com/document/d/1e44ey5J2ASQOrHIXp5F7blnU6Lqx132j-jjESOT7hkM/edit?usp=sharing"
+      - Finish by saying that the upcoming weeks will be of extra-hard work to motivate the team.
+    feedbackForCorrect: That is correct! Ending a meeting should always be done in an active and positive manner. That leaves employees motivated and improves the overall communication.
+    feedbackForWrong: No worries, next time is your time to shine! Try to think more about how your employees feel when trying to give them work. Instead of telling them that they have a lot of work to do, try motivating them and show them that you understand their position.
+referencesLink: "PLACEHOLDER"
 funFacts: []

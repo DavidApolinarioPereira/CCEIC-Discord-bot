@@ -1,32 +1,29 @@
-name: "[LG 1] Importance of asking questions"
-videoUri: https://youtu.be/ImfU12epYcI?t=95
+name: "[LG 1] Define internal communication"
+videoUri: https://www.youtube.com/watch?v=GJIL4rBYNV0
 description: |
-  Asking questions is something really important, especially in a work environment. Much of our time is spent asking others for information, clarification of something previously said etc. 
-  Therefore, it is important to have some insight on some Questioning Techniques when communicating.
-  During the communication process, asking questions helps us (Lane, 2019):
-  - Clarifying the Information (A good question "can create an 'aha' moment, which can then lead to inovation" (Cheverie, 2017)).
-  - Extract more relevant information
-  - Create a focused on what is important for us
+  Internal communication is increasingly relevant for organizations, as it improves employee inclusion and contributes to the overall success of the enterprise (FitzPatrick et al., 2017).
+  Internal communications can help a company address structural problem areas and promote a culture of trust and openness. It should be regarded as an organizational strategy rather than the duty of a single person (Johnson, 2022).
+  A good internal communicator should strive to be open and accurate, while passing clear messages that all employees can understand, avoiding the creation of communication hurdles. It is not as easy job, but a vital one to provide transparency within the company (Green, 2020).
+evaluationQuestions:  
+  - question: Define internal communication (More than one answer is correct)
+    correctAnswers:
+      - Internal Communication is a collaborative effort between the members of the team.
+      - Internal communication should strive for clear interaction between the members of a company.
+    wrongAnswers:
+      - Internal Communication is the responsibility of a single person in a company.
+      - None are correct.
+    feedbackForCorrect: Well done! Internal Communication is all about creating meaningful interaction and collaboration among people.
+    feedbackForWrong: Well done! Internal Communication is all about creating meaningful interaction and collaboration among people.
+  - question: Which of these statements is correct?
+    correctAnswers:
+      - Internal communication is important for all companies, as it improves the success of the enterprise.
+    wrongAnswers:
+      - The relevance of internal communication depends on the company and context where it is applied.
+      - Internal communication is more important for leadership positions.
+      - Internal communication should strive to achieve communication transparency, but only when it is appropriate.
+    feedbackForCorrect: Well done! Internal Communication will promote a culture of trust and openness, and help breaking communication barriers.
+    feedbackForWrong: Don't worry! You'll get it next time! Internal Communication is relevant in every context and in every situation, and it is important in every level of the hierarchy. It will also promote a culture of trust and openness, and help breaking communication barriers.
 
-  The use of questioning techniques is an important area of verbal communication. By asking questions, you gain answers, understanding, and potentially acceptance for the message sender. You can also stimulate learning and allow for one to drive clearer ideas and create and incentive to act upon a subject.
-formativeQuestions:
-  - question: Which of the following is **not** a correct application for a question?
-    correctAnswers:
-      - Manipulating the receiver.
-    wrongAnswers:
-      - Establishing rapport.
-      - Clarifying an aspect that is unclear.
-      - Engaging with others.
-    feedbackForCorrect: Correct! Asking questions should be seen as means to share information, not as a way to jeopardize the communication process.
-    feedbackForWrong: One of the incorrect usage of questioning is attempting to manipulate the receiver. Asking questions should be seen as means to share information, not as a way to jeopardize the communication process. 
-evaluationQuestions:
-  - question: Imagine that you are delivering a presentation, and at the end of it, you ask the audience "Do you have anything to add to what has been said?". What does this question intend to establish? (More than one answer is correct)
-    correctAnswers:
-      - Opening lines of communication.
-      - Learning more about the receiver.
-    wrongAnswers:
-      - Clarifying an aspect that is unclear.
-    feedbackForCorrect: Well done! A well-placed question can establish some lines of communication. This will allow you to receive more opinions and points-of-view.
-    feedbackForWrong: The correct answers were opening lines of communication and Learning more about the receiver. A well-placed question can establish some lines of communication. This will allow you to receive more opinions and points-of-view.
-referencesLink: "https://docs.google.com/document/d/1e44ey5J2ASQOrHIXp5F7blnU6Lqx132j-jjESOT7hkM/edit?usp=sharing"
+
+referencesLink: "PLACEHOLDER"
 funFacts: []

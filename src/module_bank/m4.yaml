@@ -1,44 +1,31 @@
-name: "[LG 4] Define, identify and use Open Questions"
-videoUri: "https://www.youtube.com/watch?v=_gjeTDH4XjU"
+name: "[LG 7] Characterize 3 means/tools of internal communication"
+videoUri: "https://www.youtube.com/watch?v=ioEpTO6w35M"
 description: |
-  “An open ended question is designed to encourage a full, meaningful, and deliberate answer using the subject's own knowledge and/or feelings.”  (Formplus Blog, 2021)
-  Use cases (Formplus Blog, 2021b)
-  - Asking details;
-  - Assessing deep knowledge of a subject;
-  - Assess communication skills;
-  - See how the respondent thinks (“open ended questions (...) encourages creative answers and self expression” (Formplus Blog, 2021b));
-  - Help build rapport;
-  - Help uncover previously unspoken needs - respondents are encouraged to provide more information than what was asked
-  - Appropriate for giving qualitative information (“more useful, contextual feedback” - (Formplus Blog, 2021b))
-formativeQuestions:
-  - question: "Identify one Open question (More than one answer is correct):"
-    correctAnswers:
-      - What is the most important feature of this product for you?
-      - How would you describe your experience in this company?
-    wrongAnswers:
-      - Did you like our product?
-      - Are you happy with your experience in this company?
-    feedbackForCorrect: You are correct!. Open questions allow us to develop a better understanding of your customers and their needs, as demonstrated here.
-    feedbackForWrong: Mmmm, you might want to review your answer. You might be confusing closed questions with open questions. Open-ended question can be used when you want to develop a better understanding of your customers and their needs [2].
+  There are many communication tools on the market these days it is hard to pick one. “The difficulty is in finding the ones that are more than just tools for tools sake, and then using them in a way that solves real employee problems” (Screencloud, 2022). Here, we list three tools one can use for Internal Communication.
+  1. Using a forum for communication and discussion inside a company can help with the sharing of ideas. Although communication in forums can be more informal, it can help when ideas need to be discussed with more than one colleague (Screencloud, 2022).
+  2. Instant messaging tools: Instant messaging tools can be a quick way to communicate with colleagues within the company. It is not as good for discussions with big groups as a forum, but can help if we quickly need a response from someone, such as a Team Leader (Duncan, 2022).
+  3. Video Chat: Video chatting tools can be useful for longer discussions, as it helps with the visual communication of ideas (Duncan, 2022).
+  4. (Bonus): Despite being a dying breed (unfortunately), emails are still one of the main communication methods. They can be used to send newsletters or important work notifications to a group of employees within a company. Beware, however, of email overload, which may result in missing more information in the first place (Duncan, 2022).
+  Using the right tool for the right job is also very important. If you want to communicate something quickly, scheduling a video call might take too long. Instead, consider sending a message or trying out something that people pay attention to.
 evaluationQuestions:
-  - question: Identify one Open question! (More than one answer is correct)
+  - question: Imagine a situation where you need to communicate something urgent to one of your colleagues. What is the ideal tool for that?
     correctAnswers:
-      - How do you feel about our customer service?
-      - What were the main reasons you chose our product?
+      - Instant Messaging
     wrongAnswers:
-      - Did you experience good customer service?
-      - Would you recomend our product?
-    feedbackForCorrect: That is correct! Open questions allow us to develop a better understanding of your customers and their needs, as demonstrated here.
-    feedbackForWrong: That was unfortunately not an Open ended Question. "Open-ended question are used when you want to develop a better understanding of your customers and their needs" (Dossetto, 2019). Feel free to try again!
-  - question: Identify one Open question! (More than one answer is correct)
+      - Email
+      - Zoom Meeting
+      - Forum
+    feedbackForCorrect: Well done! Indeed, the best way to quickly communicate with a single team member is an instant messaging platform. It can be used a first point of contact, to later address the issue using a different tool, for example.
+    feedbackForWrong: Don’t worry! You’ll get it next time! Notice that we want to communicate with only one of the colleagues and in a fast manner. Therefore, the ideal tool to use is an instant messaging platform to quickly get in touch with our colleague.
+  - question: Imagine you are a manager in a company and that you need to communicate and discuss something with your employees. It is not urgent, but it needs to get out to everyone. What tool would be good for this?
     correctAnswers:
-      - How would you explain the idea to your co-workers?
-      - What are the best aspects of your project's team?
+      - Zoom Meeting
     wrongAnswers:
-      - Is this your favorite project?
-      - Is there a problem with the team you are working with?
-    feedbackForCorrect: You are correct! Open questions allow us to develop a better understanding of your customers and their needs, as demonstrated here.
-    feedbackForWrong: That was unfortunately not an Open ended Question. "Open-ended question when you want to develop a better understanding of your customers and their needs" (Dossetto, 2019). Feel free to try again!
-referencesLink: "https://docs.google.com/document/d/1e44ey5J2ASQOrHIXp5F7blnU6Lqx132j-jjESOT7hkM/edit?usp=sharing"
+      - Forum
+      - Instant Messaging
+      - Email
+    feedbackForCorrect: Well done! Indeed, the best way to communicate and discuss with several people is via a (video) meeting. There is space for everyone to join the debate and for the point to be thoughtfully communicated.
+    feedbackForWrong: Don’t worry! You’ll get it next time! Notice that we want to discuss with several employees. Therefore, the ideal tool to use is a Zoom meeting to easily gather and communicate what is needed.
+referencesLink: "PLACEHOLDER"
 funFacts:
-  - "Here is something funny for you to see before you go. Enjoy!: https://www.youtube.com/watch?v=tU8U-vXdKz4"
+  - "You are awesome! :D"

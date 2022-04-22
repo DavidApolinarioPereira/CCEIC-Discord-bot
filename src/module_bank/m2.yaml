@@ -1,34 +1,28 @@
-name: "[LG 2] Role of asking questions in a professional context"
-videoUri: https://youtu.be/ImfU12epYcI?t=95
+name: "[LG 2] Enounce 3 benefits of an effective internal communication"
+videoUri: ""
 description: |
-    In the professional context, the ability to ask questions increases our management abilities. Some of these abilities include (Chisholm, 2020): 
-    - Being eager to learn and accepting new ideas and points of view and not letting hierarchy interfere with learning.
-    - Eager to engage and pay attention to the response given by our colleagues.
-    - Being curious and trying to understand how others see the same situations.
-    "When your questions are met with good answers, it adds dimensions to your thought process, allowing you to come up with innovative pivoting plans during a crisis, portray authenticity, or determine ways to support your team during trying times." (Chisholm, 2020)
-    Asking questions will also improve group moral in a work envirnoment and helps teams find betters solutions together. People that ask questions are better at building relationships which is key in a work envirnoment.
-    During this process we also learn more about our colleagues at work and how to deal with them in the future, also contributing to a productive environment.
-formativeQuestions:
-  - question: "When presented with the chance of asking questions in a work environment one should (Choose the ones that are more correct, more than one is correct):"
-    correctAnswers:
-      - Thouroughly plan the questions you want to ask
-      - Always try to have an open conversation
-    wrongAnswers:
-      - Ask questions without considering the answer of the respondant to frame your next question 
-      - Ask questions, even if they don't necessarily give you the most relevant information
-    feedbackForCorrect: "You are correct. Always plan your questions and try to have an open conversation, inviting the respondant to talk."
-    feedbackForWrong: "Mmmm, maybe you need to revise that again. Always try to frame the next question even if this takes you off the planned path. All the questions you ask should bring something relevant to you."
+    Good Internal Communication can lead to several benefits.
+    - The first benefit is employee engagement. Companies with a focus on Internal Communication have higher employee retention (Baldoni, 2009), and increase the value given to its customers and shareholders (Wyatt, 2009).
+    - Companies may also experience a decrease in security threats when applying Internal Communication. For example, improving the communication channels regarding security briefings, will result in more security-aware employees, more likely to follow and apply the IT policies of the enterprise (Brown, 2021).
+    - "Without proper identification and continuous adaptation, you'll be trying to hit a moving target while blindfolded" (Crombach, 2018). Using good internal communication practices, the organization can ensure that its workers are all working towards a collective goal.
 evaluationQuestions:
-  - question: "In a work environment, a colleague should (Indeed Editorial Team, 2021): (More than one answer is correct)" 
+  - question: "Which of the following sentences is Incorrect?:"
     correctAnswers:
-      - Ask follow-up questions
-      - Thank the respondant at the end
+      - The use of Internal Communication may compromise the enterprise in terms of security, due to the high volume of messages being exchanged.
     wrongAnswers:
-      - Interrupt when there is the need for it
-      - Ask more generalised questions without any specific focus on any topic
-    feedbackForCorrect: "Correct! One should always strive ask more questions, since that allows us to have a better understanding of the topic. Also, being polite to the respondant is very important! :)"
-    feedbackForWrong: >
-      Not bad. However, we would like to point you in a different direction: you should avoid interrupting the speaker, even if it seems like you absolutely need to and feel it is the right point of the conversation to do so. 
-      Furthermore, always let the speaker finish before starting to talk. Try to focus on a specific topic instead of just asking generic questions. This will improve your questioning techniques!
-referencesLink: "https://docs.google.com/document/d/1e44ey5J2ASQOrHIXp5F7blnU6Lqx132j-jjESOT7hkM/edit?usp=sharing"
+      - Internal Communication will lead to a more positive working environment within the organization. 
+      - Internal Communication can contribute to a higher employee retention rate, and improve the company value.
+    feedbackForCorrect: This sentence is correct. Internal Communication will lead to a more positive working environment and a higher employee retention rate. The incorrect sentence is c). Using Internal Communication, the organization’s employees will become more aware of security protocols, resulting in a more secure environment.
+    feedbackForWrong: Indeed, this sentence is incorrect. Using Internal Communication, the organization’s employees will become more aware of security protocols, resulting in a more secure environment.
+  - question: Imagine that a certain tech company wants to deploy a set of Internal Communication practices. What benefits can the organization expect?
+    correctAnswers:
+      - The company can expect an increase in value and an improvement in teamwork amongst the employees. 
+    wrongAnswers:
+      - The company can expect an increase in employee turnover (the rate at which employees enter and exit the company will be higher).
+      - The company can expect to become more vulnerable to security breaches. 
+      - The company can expect to create a less positive working environment amongst the employees.
+    feedbackForCorrect: "This sentence is correct. Internal Communication will lead to a more positive working environment and a higher employee retention rate. The incorrect sentence is c). Using Internal Communication, the organization’s employees will become more aware of security protocols, resulting in a more secure environment."
+    feedbackForWrong: Correct! Using Internal Communication principles, one can expect to improve the overall working environment, and therefore, have motivated employees.
+
+referencesLink: "PLACEHOLDER"
 funFacts: []
