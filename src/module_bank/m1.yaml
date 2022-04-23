@@ -13,7 +13,7 @@ evaluationQuestions:
       - Internal Communication is the responsibility of a single person in a company.
       - None are correct.
     feedbackForCorrect: Well done! Internal Communication is all about creating meaningful interaction and collaboration among people.
-    feedbackForWrong: Don’t worry! You’ll get it next time! Internal Communication is not the responsibility of a single person, it requires effort from everyone. It is all about creating meaningful interaction and collaboration among people.
+    feedbackForWrong: Don’t worry! You’ll get it next time! Internal Communication is not the responsibility of a single person, it requires effort from everyone. It is all about creating meaningful interaction and a collaborative environment among people.
   - question: Which of these statements is correct?
     correctAnswers:
       - Internal communication is important for all companies, as it improves their success.

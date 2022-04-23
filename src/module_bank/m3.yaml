@@ -18,7 +18,7 @@ evaluationQuestions:
       - Living a dull life
     feedbackForCorrect: Well done! Failing to overcome these barriers can lead to motivation issues, lack of empathy between employees, and poor communication altogether. These are aspects that are needed for proper Internal Communication :).
     feedbackForWrong: Don’t worry! You’ll get it next time! The three barriers that were highlighted are lack of feedback, lack of mutual respect, and lack of clearly defining communication methods. Failing to overcome them can lead to motivation issues, lack of empathy between employees, and poor communication altogether.
-  - question:  "Imagine someone says the following: 'I cannot work with him. His accent is just too much for me to understand them'. What barrier to internal communication is most present here?"
+  - question: "Imagine someone says the following: 'I cannot work with him. His accent is just too much for me to understand'. What barrier to internal communication is most present here?"
     correctAnswers:
       - Lack of Clear Communication method
     wrongAnswers:
