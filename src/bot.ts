@@ -3,7 +3,7 @@ import Discord, { CommandInteraction, MessageActionRow } from 'discord.js'
 import { MessageButtonStyles } from 'discord.js/typings/enums'
 import BotConfiguration from './config.js'
 import { ModuleExecution, ModuleRegistry } from './modules/index.js'
-import { AnswerAction, EndAction, EvaluationPreActions, ModuleExecutionEnd, ModuleExecutionError, ModuleExecutionEvaluation, ModuleExecutionEvaluationPre, ModuleExecutionStart } from './modules/execution.js'
+import { AnswerAction, EndAction, EvaluationPreActions, ModuleExecutionEnd, ModuleExecutionError, ModuleExecutionEvaluation, ModuleExecutionEvaluationPre, ModuleExecutionEvaluationFeedback, ModuleExecutionStart } from './modules/execution.js'
 import { ExecutionVisitor } from './modules/executionvisitor.js'
 import { REST } from '@discordjs/rest'
 import { Routes, RESTPostAPIApplicationCommandsJSONBody, APIApplicationCommandOptionChoice } from 'discord-api-types/v10'
@@ -47,7 +47,7 @@ export default class Bot {
           option
             .setName('module')
             .setDescription('module name')
-            .addChoices(...this.modules.entries().map(([key, mod]) => ({name: mod.name, value: key})))
+            .addChoices(...this.modules.entries().map(([key, mod]) => ({ name: mod.name, value: key })))
             .setRequired(true)
         )
         .setDefaultPermission(true)
@@ -227,6 +227,31 @@ class ModuleExecutionRenderer extends ExecutionVisitor<Promise<void>> {
         ...options.map(([answer, _actionId], idx) => `${idx}. ${answer}`)
       ].join('\n'),
       components
+    })
+  }
+
+  public async visitEvaluationFeedback(e: ModuleExecutionEvaulationFeedback): Promise<void> {
+    let feedback: string
+    if (e.isRightAnswer()) {
+      feedback = e.question().feedbackForCorrect ?? "That's right! Keep going!"
+    } else {
+      feedback = e.question().feedbackForWrong ?? 'Not quite. Try again!'
+    }
+
+    await this.interaction.update({
+      content: [
+        `__**${e.module.name}**__`,
+        `**Question ${e.questionNumber + 1}/${e.module.evaluationQuestions.length}**`,
+        feedback
+      ].join('\n'),
+      components: [
+        new MessageActionRow()
+          .addComponents(
+            this.button(e, '_')
+              .setStyle(MessageButtonStyles.PRIMARY)
+              .setLabel(e.isRightAnswer() ? 'Next' : 'Retry')
+          )
+      ]
     })
   }
 

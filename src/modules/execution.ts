@@ -34,6 +34,11 @@ export abstract class ModuleExecution {
         qn = reader.int8()
         s = reader.float64()
         return new ModuleExecutionEvaluation(module, seed, qn, s)
+      case ModuleExecutionType.EvaluationFeedback:
+        qn = reader.int8()
+        r = reader.int8() === 1
+        s = reader.float64()
+        return new ModuleExecutionEvaluationFeedback(module, seed, qn, r, s)
       case ModuleExecutionType.End:
         s = reader.float64()
         return new ModuleExecutionEnd(module, s)
@@ -81,6 +86,7 @@ enum ModuleExecutionType {
   Start = 0,
   EvaluationPre,
   Evaluation,
+  EvaluationFeedback,
   End,
   Error,
 }
@@ -169,11 +175,12 @@ export class ModuleExecutionEvaluation extends ModuleExecution {
   }
 
   public advance(actionId: string): ModuleExecution {
+    const isRight = this.isRightAnswer(actionId)
     const nextQid = this.questionNumber + 1
-    const newScore = this.score + (this.isRightAnswer(actionId) ? 1 : 0)
+    const newScore = this.score + (isRight ? 1 : 0)
 
     if (nextQid < this.module.evaluationQuestions.length) {
-      return new ModuleExecutionEvaluation(this.module, this.rngSeed, nextQid, newScore)
+      return new ModuleExecutionEvaluationFeedback(this.module, this.rngSeed, nextQid, isRight, newScore)
     } else {
       return new ModuleExecutionEnd(this.module, newScore)
     }
@@ -186,6 +193,62 @@ export class ModuleExecutionEvaluation extends ModuleExecution {
 
   public accept<T>(visitor: ExecutionVisitor<T>): T {
     return visitor.visitEvaluation(this)
+  }
+}
+
+export class ModuleExecutionEvaluationFeedback extends ModuleExecution {
+  public readonly questionNumber: number
+  public readonly rightAnswer: boolean
+  public readonly score: number
+
+  constructor(module: Module, rngSeed: number, qn: number, r: boolean, s: number) {
+    super(module, rngSeed)
+    this.questionNumber = qn
+    this.rightAnswer = r
+    this.score = s
+  }
+
+  protected typeId(): number {
+    return ModuleExecutionType.EvaluationFeedback
+  }
+
+  protected serializeInner(writer: CdrWriter): void {
+    writer.int8(this.questionNumber)
+    writer.int8(Number(this.rightAnswer))
+    writer.float64(this.score)
+  }
+
+  public advance(_actionId: string): ModuleExecution {
+    const nextQid = this.questionNumber + 1
+
+    if (nextQid >= this.module.evaluationQuestions.length) {
+      return new ModuleExecutionEnd(this.module, this.score)
+    } else {
+      return new ModuleExecutionEvaluation(this.module, this.rngSeed, nextQid, this.score)
+    }
+  }
+
+  public question(): Question {
+    // TODO: remove repetitive code
+    const questions = [...this.module.evaluationQuestions]
+
+    // remove previous questions from pool
+    let trueIdx: number
+    for (let idx = 0; idx < this.questionNumber; idx++) {
+      trueIdx = this.random(idx) % questions.length
+      questions.splice(trueIdx, 1)
+    }
+
+    // show next one
+    return questions[this.random(this.questionNumber) % questions.length]
+  }
+
+  public isRightAnswer(): boolean {
+    return this.rightAnswer
+  }
+
+  public accept<T>(visitor: ExecutionVisitor<T>): T {
+    return visitor.visitEvaluationFeedback(this)
   }
 }
 
