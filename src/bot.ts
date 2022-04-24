@@ -9,7 +9,7 @@ import { REST } from '@discordjs/rest'
 import { Routes, RESTPostAPIApplicationCommandsJSONBody, APIApplicationCommandOptionChoice } from 'discord-api-types/v10'
 import arrayShuffle from 'array-shuffle'
 
-const ATTRIBUTION: string = '**Developers**\nAndré Breda (ist189409), David Apolinário (ist198685), Miguel Marcelino (ist198684), Wilson Pereira (ist189561)'
+const ATTRIBUTION: string = '**Developers**\nAndré Breda (ist189409), David Apolinário (ist198685), Miguel Marcelino (ist198684)'
 
 export default class Bot {
   private readonly client: Discord.Client
