@@ -230,7 +230,7 @@ class ModuleExecutionRenderer extends ExecutionVisitor<Promise<void>> {
     })
   }
 
-  public async visitEvaluationFeedback(e: ModuleExecutionEvaulationFeedback): Promise<void> {
+  public async visitEvaluationFeedback(e: ModuleExecutionEvaluationFeedback): Promise<void> {
     let feedback: string
     if (e.isRightAnswer()) {
       feedback = e.question().feedbackForCorrect ?? "That's right! Keep going!"
