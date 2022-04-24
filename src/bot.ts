@@ -169,12 +169,12 @@ class ModuleExecutionRenderer extends ExecutionVisitor<Promise<void>> {
       e.module.description,
       '',
       e.module.videoUri !== '' ? `Before starting you should check out ${e.module.videoUri}` : '',
-      '**How will this work?**',
-      `After clicking next you will answer ${e.module.evaluationQuestions.length} questions that should use to assess your knowledge.`,
-      'Following those, you have the chance to go back to the beginning or restart the evaluation.',
-      '**References**',
-      `Find the references for this module at <${e.module.referencesLink}>`,
-      ATTRIBUTION,
+      // '**How will this work?**',
+      // `After clicking next you will answer ${e.module.evaluationQuestions.length} questions to assess your knowledge.`,
+      // 'Once you finish, you can always go back to the beginning or restart the evaluation.',
+      // '**References**',
+      // `Find the references for this module at <${e.module.referencesLink}>`,
+      // ATTRIBUTION,
       '',
       'See you on the other side!'
     ].join('\n')
