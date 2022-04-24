@@ -249,7 +249,7 @@ class ModuleExecutionRenderer extends ExecutionVisitor<Promise<void>> {
           .addComponents(
             this.button(e, '_')
               .setStyle(MessageButtonStyles.PRIMARY)
-              .setLabel(e.isRightAnswer() ? 'Next' : 'Retry')
+              .setLabel('Next')
           )
       ]
     })

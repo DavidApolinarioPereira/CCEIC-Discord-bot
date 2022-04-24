@@ -176,14 +176,9 @@ export class ModuleExecutionEvaluation extends ModuleExecution {
 
   public advance(actionId: string): ModuleExecution {
     const isRight = this.isRightAnswer(actionId)
-    const nextQid = this.questionNumber + 1
     const newScore = this.score + (isRight ? 1 : 0)
 
-    if (nextQid < this.module.evaluationQuestions.length) {
-      return new ModuleExecutionEvaluationFeedback(this.module, this.rngSeed, nextQid, isRight, newScore)
-    } else {
-      return new ModuleExecutionEnd(this.module, newScore)
-    }
+    return new ModuleExecutionEvaluationFeedback(this.module, this.rngSeed, this.questionNumber, isRight, newScore)
   }
 
   private isRightAnswer(actionId: string): boolean {
