@@ -25,5 +25,14 @@ evaluationQuestions:
       - There is no barrier
     feedbackForCorrect: Well done! The lack of a clear communication method is the main reason that both employees are struggling to communicate. It is very important to establish a communication strategy before attempting to communicate with your co-workers.
     feedbackForWrong: Don’t worry! You’ll get it next time! Notice that the employees in the scenario are incapable of understanding each other. This is happening because they have yet to establish a communication strategy. Therefore, the most prevalent barrier is the lack of a clear communication method.
+  - question: "What do you mean tomorrow is Sabbath? Just come to work and stop spewing nonsense"
+    correctAnswers:
+      - Lack of Mutual Respect
+    wrongAnswers:
+      - Lack of Feedback
+      - There is no barrier
+      - There is no barrier
+    feedbackForCorrect: Well done! The lack of mutual respect is the main reason that both employees are struggling to communicate. It is very important to keep an open mind, and to have respect for your colleagues’ tastes and beliefs.
+    feedbackForWrong: Don’t worry! You’ll get it next time! Notice that the employee in the scenario is not acknowledging the importance the date has to the other worker. There is a clear lack of mutual respect, and this is hurting the communication between them.
 referencesLink: "https://docs.google.com/document/d/1iZHTfm4wm7iG-_L7jpk6_SIjsHsiK9MtV-maZt9P0wA/"
 funFacts: []
